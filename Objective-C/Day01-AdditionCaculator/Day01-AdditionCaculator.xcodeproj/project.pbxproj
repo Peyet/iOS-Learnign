@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC486ECB26D5FAA500DCD3BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC486ECA26D5FAA500DCD3BE /* AppDelegate.m */; };
+		DC486ECE26D5FAA500DCD3BE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC486ECD26D5FAA500DCD3BE /* SceneDelegate.m */; };
+		DC486ED126D5FAA500DCD3BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC486ED026D5FAA500DCD3BE /* ViewController.m */; };
+		DC486ED426D5FAA500DCD3BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC486ED226D5FAA500DCD3BE /* Main.storyboard */; };
+		DC486ED626D5FAA600DCD3BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC486ED526D5FAA600DCD3BE /* Assets.xcassets */; };
+		DC486ED926D5FAA600DCD3BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC486ED726D5FAA600DCD3BE /* LaunchScreen.storyboard */; };
+		DC486EDC26D5FAA600DCD3BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC486EDB26D5FAA600DCD3BE /* main.m */; };
+		DC486EE626D5FAA600DCD3BE /* Day01_AdditionCaculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC486EE526D5FAA600DCD3BE /* Day01_AdditionCaculatorTests.m */; };
+		DC486EF126D5FAA600DCD3BE /* Day01_AdditionCaculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC486EF026D5FAA600DCD3BE /* Day01_AdditionCaculatorUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC486EE226D5FAA600DCD3BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC486EBE26D5FAA500DCD3BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC486EC526D5FAA500DCD3BE;
+			remoteInfo = "Day01-AdditionCaculator";
+		};
+		DC486EED26D5FAA600DCD3BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC486EBE26D5FAA500DCD3BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC486EC526D5FAA500DCD3BE;
+			remoteInfo = "Day01-AdditionCaculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC486EC626D5FAA500DCD3BE /* Day01-AdditionCaculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day01-AdditionCaculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC486EC926D5FAA500DCD3BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC486ECA26D5FAA500DCD3BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC486ECC26D5FAA500DCD3BE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DC486ECD26D5FAA500DCD3BE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DC486ECF26D5FAA500DCD3BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DC486ED026D5FAA500DCD3BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC486ED326D5FAA500DCD3BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC486ED526D5FAA600DCD3BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC486ED826D5FAA600DCD3BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC486EDA26D5FAA600DCD3BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC486EDB26D5FAA600DCD3BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC486EE126D5FAA600DCD3BE /* Day01-AdditionCaculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day01-AdditionCaculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC486EE526D5FAA600DCD3BE /* Day01_AdditionCaculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day01_AdditionCaculatorTests.m; sourceTree = "<group>"; };
+		DC486EE726D5FAA600DCD3BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC486EEC26D5FAA600DCD3BE /* Day01-AdditionCaculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day01-AdditionCaculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC486EF026D5FAA600DCD3BE /* Day01_AdditionCaculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day01_AdditionCaculatorUITests.m; sourceTree = "<group>"; };
+		DC486EF226D5FAA600DCD3BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC486EC326D5FAA500DCD3BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC486EDE26D5FAA600DCD3BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC486EE926D5FAA600DCD3BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC486EBD26D5FAA500DCD3BE = {
+			isa = PBXGroup;
+			children = (
+				DC486EC826D5FAA500DCD3BE /* Day01-AdditionCaculator */,
+				DC486EE426D5FAA600DCD3BE /* Day01-AdditionCaculatorTests */,
+				DC486EEF26D5FAA600DCD3BE /* Day01-AdditionCaculatorUITests */,
+				DC486EC726D5FAA500DCD3BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC486EC726D5FAA500DCD3BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC486EC626D5FAA500DCD3BE /* Day01-AdditionCaculator.app */,
+				DC486EE126D5FAA600DCD3BE /* Day01-AdditionCaculatorTests.xctest */,
+				DC486EEC26D5FAA600DCD3BE /* Day01-AdditionCaculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC486EC826D5FAA500DCD3BE /* Day01-AdditionCaculator */ = {
+			isa = PBXGroup;
+			children = (
+				DC486EC926D5FAA500DCD3BE /* AppDelegate.h */,
+				DC486ECA26D5FAA500DCD3BE /* AppDelegate.m */,
+				DC486ECC26D5FAA500DCD3BE /* SceneDelegate.h */,
+				DC486ECD26D5FAA500DCD3BE /* SceneDelegate.m */,
+				DC486ECF26D5FAA500DCD3BE /* ViewController.h */,
+				DC486ED026D5FAA500DCD3BE /* ViewController.m */,
+				DC486ED226D5FAA500DCD3BE /* Main.storyboard */,
+				DC486ED526D5FAA600DCD3BE /* Assets.xcassets */,
+				DC486ED726D5FAA600DCD3BE /* LaunchScreen.storyboard */,
+				DC486EDA26D5FAA600DCD3BE /* Info.plist */,
+				DC486EDB26D5FAA600DCD3BE /* main.m */,
+			);
+			path = "Day01-AdditionCaculator";
+			sourceTree = "<group>";
+		};
+		DC486EE426D5FAA600DCD3BE /* Day01-AdditionCaculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC486EE526D5FAA600DCD3BE /* Day01_AdditionCaculatorTests.m */,
+				DC486EE726D5FAA600DCD3BE /* Info.plist */,
+			);
+			path = "Day01-AdditionCaculatorTests";
+			sourceTree = "<group>";
+		};
+		DC486EEF26D5FAA600DCD3BE /* Day01-AdditionCaculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC486EF026D5FAA600DCD3BE /* Day01_AdditionCaculatorUITests.m */,
+				DC486EF226D5FAA600DCD3BE /* Info.plist */,
+			);
+			path = "Day01-AdditionCaculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC486EC526D5FAA500DCD3BE /* Day01-AdditionCaculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC486EF526D5FAA600DCD3BE /* Build configuration list for PBXNativeTarget "Day01-AdditionCaculator" */;
+			buildPhases = (
+				DC486EC226D5FAA500DCD3BE /* Sources */,
+				DC486EC326D5FAA500DCD3BE /* Frameworks */,
+				DC486EC426D5FAA500DCD3BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day01-AdditionCaculator";
+			productName = "Day01-AdditionCaculator";
+			productReference = DC486EC626D5FAA500DCD3BE /* Day01-AdditionCaculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC486EE026D5FAA600DCD3BE /* Day01-AdditionCaculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC486EF826D5FAA600DCD3BE /* Build configuration list for PBXNativeTarget "Day01-AdditionCaculatorTests" */;
+			buildPhases = (
+				DC486EDD26D5FAA600DCD3BE /* Sources */,
+				DC486EDE26D5FAA600DCD3BE /* Frameworks */,
+				DC486EDF26D5FAA600DCD3BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC486EE326D5FAA600DCD3BE /* PBXTargetDependency */,
+			);
+			name = "Day01-AdditionCaculatorTests";
+			productName = "Day01-AdditionCaculatorTests";
+			productReference = DC486EE126D5FAA600DCD3BE /* Day01-AdditionCaculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC486EEB26D5FAA600DCD3BE /* Day01-AdditionCaculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC486EFB26D5FAA600DCD3BE /* Build configuration list for PBXNativeTarget "Day01-AdditionCaculatorUITests" */;
+			buildPhases = (
+				DC486EE826D5FAA600DCD3BE /* Sources */,
+				DC486EE926D5FAA600DCD3BE /* Frameworks */,
+				DC486EEA26D5FAA600DCD3BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC486EEE26D5FAA600DCD3BE /* PBXTargetDependency */,
+			);
+			name = "Day01-AdditionCaculatorUITests";
+			productName = "Day01-AdditionCaculatorUITests";
+			productReference = DC486EEC26D5FAA600DCD3BE /* Day01-AdditionCaculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC486EBE26D5FAA500DCD3BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Peyet-Zhao";
+				TargetAttributes = {
+					DC486EC526D5FAA500DCD3BE = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					DC486EE026D5FAA600DCD3BE = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = DC486EC526D5FAA500DCD3BE;
+					};
+					DC486EEB26D5FAA600DCD3BE = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = DC486EC526D5FAA500DCD3BE;
+					};
+				};
+			};
+			buildConfigurationList = DC486EC126D5FAA500DCD3BE /* Build configuration list for PBXProject "Day01-AdditionCaculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC486EBD26D5FAA500DCD3BE;
+			productRefGroup = DC486EC726D5FAA500DCD3BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC486EC526D5FAA500DCD3BE /* Day01-AdditionCaculator */,
+				DC486EE026D5FAA600DCD3BE /* Day01-AdditionCaculatorTests */,
+				DC486EEB26D5FAA600DCD3BE /* Day01-AdditionCaculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC486EC426D5FAA500DCD3BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC486ED926D5FAA600DCD3BE /* LaunchScreen.storyboard in Resources */,
+				DC486ED626D5FAA600DCD3BE /* Assets.xcassets in Resources */,
+				DC486ED426D5FAA500DCD3BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC486EDF26D5FAA600DCD3BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC486EEA26D5FAA600DCD3BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC486EC226D5FAA500DCD3BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC486ED126D5FAA500DCD3BE /* ViewController.m in Sources */,
+				DC486ECB26D5FAA500DCD3BE /* AppDelegate.m in Sources */,
+				DC486EDC26D5FAA600DCD3BE /* main.m in Sources */,
+				DC486ECE26D5FAA500DCD3BE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC486EDD26D5FAA600DCD3BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC486EE626D5FAA600DCD3BE /* Day01_AdditionCaculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC486EE826D5FAA600DCD3BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC486EF126D5FAA600DCD3BE /* Day01_AdditionCaculatorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC486EE326D5FAA600DCD3BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC486EC526D5FAA500DCD3BE /* Day01-AdditionCaculator */;
+			targetProxy = DC486EE226D5FAA600DCD3BE /* PBXContainerItemProxy */;
+		};
+		DC486EEE26D5FAA600DCD3BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC486EC526D5FAA500DCD3BE /* Day01-AdditionCaculator */;
+			targetProxy = DC486EED26D5FAA600DCD3BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC486ED226D5FAA500DCD3BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC486ED326D5FAA500DCD3BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC486ED726D5FAA600DCD3BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC486ED826D5FAA600DCD3BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC486EF326D5FAA600DCD3BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC486EF426D5FAA600DCD3BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC486EF626D5FAA600DCD3BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Day01-AdditionCaculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.Day01-AdditionCaculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC486EF726D5FAA600DCD3BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Day01-AdditionCaculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.Day01-AdditionCaculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC486EF926D5FAA600DCD3BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Day01-AdditionCaculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.Day01-AdditionCaculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day01-AdditionCaculator.app/Day01-AdditionCaculator";
+			};
+			name = Debug;
+		};
+		DC486EFA26D5FAA600DCD3BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Day01-AdditionCaculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.Day01-AdditionCaculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day01-AdditionCaculator.app/Day01-AdditionCaculator";
+			};
+			name = Release;
+		};
+		DC486EFC26D5FAA600DCD3BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Day01-AdditionCaculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.Day01-AdditionCaculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Day01-AdditionCaculator";
+			};
+			name = Debug;
+		};
+		DC486EFD26D5FAA600DCD3BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Day01-AdditionCaculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.Day01-AdditionCaculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Day01-AdditionCaculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC486EC126D5FAA500DCD3BE /* Build configuration list for PBXProject "Day01-AdditionCaculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC486EF326D5FAA600DCD3BE /* Debug */,
+				DC486EF426D5FAA600DCD3BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC486EF526D5FAA600DCD3BE /* Build configuration list for PBXNativeTarget "Day01-AdditionCaculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC486EF626D5FAA600DCD3BE /* Debug */,
+				DC486EF726D5FAA600DCD3BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC486EF826D5FAA600DCD3BE /* Build configuration list for PBXNativeTarget "Day01-AdditionCaculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC486EF926D5FAA600DCD3BE /* Debug */,
+				DC486EFA26D5FAA600DCD3BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC486EFB26D5FAA600DCD3BE /* Build configuration list for PBXNativeTarget "Day01-AdditionCaculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC486EFC26D5FAA600DCD3BE /* Debug */,
+				DC486EFD26D5FAA600DCD3BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC486EBE26D5FAA500DCD3BE /* Project object */;
+}
