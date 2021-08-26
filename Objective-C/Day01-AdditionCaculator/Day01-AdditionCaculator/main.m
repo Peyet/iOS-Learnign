@@ -19,4 +19,7 @@ int main(int argc, char * argv[]) {
 }
 
 
-//command + k  : 弹出手机的虚拟键盘 
+//command + k  : 弹出手机的虚拟键盘
+
+//谁呼出了键盘, 谁就是第一响应者.
+//
