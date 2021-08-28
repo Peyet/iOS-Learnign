@@ -38,19 +38,23 @@
     
     switch (sender.tag) {
         case 1:
-            originFrame.origin.y -= 10;
+            originFrame.origin.y -= 100;
             break;
         case 2:
-            originFrame.origin.x -= 10;
+            originFrame.origin.x -= 100;
             break;
         case 3:
-            originFrame.origin.y += 10;
+            originFrame.origin.y += 100;
             break;
         case 4:
-            originFrame.origin.x += 10;
+            originFrame.origin.x += 100;
             break;
             }
-    self.clickMe.frame = originFrame;
+    //self.clickMe.frame = originFrame; //无动画
+    
+    [UIView animateWithDuration:2 animations:^{
+        self.clickMe.frame = originFrame;
+    }];
 }
 
 - (IBAction)scale:(UIButton *)sender {
@@ -59,15 +63,23 @@
     
     switch (sender.tag) {
         case 5:
-            originFrame.size.height += 10;
-            originFrame.size.width += 10;
+            originFrame.size.height += 100;
+            originFrame.size.width += 100;
             break;
         case 6:
             originFrame.size.height -= 10;
             originFrame.size.width -= 10;
             break;
     }
+    //self.clickMe.frame = originFrame;   //⬅️无动画效果
+
+    
+//  添加动画
+//  1.开启动画 (在iOS 13 中已弃用)
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:2]; // 设置执行时间
     self.clickMe.frame = originFrame;
+    [UIView commitAnimations];  //提交动画
 }
 
 //- (IBAction)clickUp {
