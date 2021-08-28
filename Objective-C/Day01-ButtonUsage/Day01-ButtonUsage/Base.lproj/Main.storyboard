@@ -55,19 +55,25 @@
                                     <action selector="down" destination="BYZ-38-t0r" eventType="touchUpInside" id="S0s-Df-gYy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spS-c3-l4K">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spS-c3-l4K" userLabel="plus">
                                 <rect key="frame" x="241" y="424" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="top_normal"/>
+                                <state key="normal" backgroundImage="plus_normal"/>
                                 <state key="disabled" backgroundImage="top_disable"/>
-                                <state key="highlighted" backgroundImage="top_highlighted"/>
+                                <state key="highlighted" backgroundImage="plus_highlighted"/>
+                                <connections>
+                                    <action selector="plus" destination="BYZ-38-t0r" eventType="touchUpInside" id="7PD-6s-oQm"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o7-dv-X1K">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o7-dv-X1K" userLabel="minus">
                                 <rect key="frame" x="311" y="424" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="top_normal"/>
+                                <state key="normal" backgroundImage="minus_normal"/>
                                 <state key="disabled" backgroundImage="top_disable"/>
-                                <state key="highlighted" backgroundImage="top_highlighted"/>
+                                <state key="highlighted" backgroundImage="minus_highlighted"/>
+                                <connections>
+                                    <action selector="minus" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7S-wY-qEb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ch-kh-PaO" userLabel="right">
                                 <rect key="frame" x="134" y="424" width="48" height="48"/>
@@ -99,6 +105,10 @@
         <image name="btn_02" width="100" height="100"/>
         <image name="left_highlighted" width="96" height="96"/>
         <image name="left_normal" width="96" height="96"/>
+        <image name="minus_highlighted" width="96" height="96"/>
+        <image name="minus_normal" width="96" height="96"/>
+        <image name="plus_highlighted" width="96" height="96"/>
+        <image name="plus_normal" width="96" height="96"/>
         <image name="right_highlighted" width="96" height="96"/>
         <image name="right_normal" width="96" height="96"/>
         <image name="top_disable" width="96" height="96"/>

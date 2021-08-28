@@ -14,6 +14,8 @@
 - (IBAction)left:(id)sender;
 - (IBAction)right;
 @property (weak, nonatomic) IBOutlet UIButton *clickMe;
+- (IBAction)plus;
+- (IBAction)minus;
 
 @end
 
@@ -56,5 +58,22 @@
     CGRect originFrame = self.clickMe.frame;
     originFrame.origin.x += 10;
     self.clickMe.frame = originFrame;
+}
+- (IBAction)plus {
+    NSLog(@"plus");
+    CGRect sizeFrame = self.clickMe.frame;
+    sizeFrame.size.height += 10;
+    sizeFrame.size.width += 10;
+    self.clickMe.frame = sizeFrame;
+    
+}
+
+- (IBAction)minus {
+    NSLog(@"minus");
+    CGRect sizeFrame = self.clickMe.frame;
+    sizeFrame.size.height -= 10;
+    sizeFrame.size.width -= 10;
+    self.clickMe.frame = sizeFrame;
+
 }
 @end
