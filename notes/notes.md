@@ -42,3 +42,7 @@ center : 中心点位置
 (void)removeFromSuperview; 从父控件中移除
 
 (UIView *)viewWithTag:(NSInteger)tag; 根据一个tag标识找出对应的控件（一般都是子控件）
+
+
+
+OC对象里有结构体属性时, 不可以直接修改结构体的值. 需要将结构体取出, 修改完之后向对象的结构体重新赋值.
