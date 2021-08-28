@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApG-2u-i96">
+                                <rect key="frame" x="50" y="100" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="点我啊" backgroundImage="btn_01">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted" title="点我干啥" backgroundImage="btn_02">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p93-zc-NFC" userLabel="up">
+                                <rect key="frame" x="83" y="356" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="top_normal"/>
+                                <state key="disabled" backgroundImage="top_disable"/>
+                                <state key="highlighted" backgroundImage="top_highlighted"/>
+                                <connections>
+                                    <action selector="clickUp" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1e-sF-chj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5s-kd-Mrg" userLabel="left">
+                                <rect key="frame" x="28" y="424" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="left_normal"/>
+                                <state key="disabled" backgroundImage="top_disable"/>
+                                <state key="highlighted" backgroundImage="left_highlighted"/>
+                                <connections>
+                                    <action selector="left:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cw1-r2-2h2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gte-LU-H6E" userLabel="down">
+                                <rect key="frame" x="83" y="482" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="bottom_normal"/>
+                                <state key="disabled" backgroundImage="top_disable"/>
+                                <state key="highlighted" backgroundImage="bottom_highlighted"/>
+                                <connections>
+                                    <action selector="down" destination="BYZ-38-t0r" eventType="touchUpInside" id="S0s-Df-gYy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spS-c3-l4K">
+                                <rect key="frame" x="241" y="424" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="top_normal"/>
+                                <state key="disabled" backgroundImage="top_disable"/>
+                                <state key="highlighted" backgroundImage="top_highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o7-dv-X1K">
+                                <rect key="frame" x="311" y="424" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="top_normal"/>
+                                <state key="disabled" backgroundImage="top_disable"/>
+                                <state key="highlighted" backgroundImage="top_highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ch-kh-PaO" userLabel="right">
+                                <rect key="frame" x="134" y="424" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="right_normal"/>
+                                <state key="disabled" backgroundImage="top_disable"/>
+                                <state key="highlighted" backgroundImage="right_highlighted"/>
+                                <connections>
+                                    <action selector="right" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyn-GP-Tyi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="clickMe" destination="ApG-2u-i96" id="9Ab-1i-1rp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottom_highlighted" width="96" height="96"/>
+        <image name="bottom_normal" width="96" height="96"/>
+        <image name="btn_01" width="100" height="100"/>
+        <image name="btn_02" width="100" height="100"/>
+        <image name="left_highlighted" width="96" height="96"/>
+        <image name="left_normal" width="96" height="96"/>
+        <image name="right_highlighted" width="96" height="96"/>
+        <image name="right_normal" width="96" height="96"/>
+        <image name="top_disable" width="96" height="96"/>
+        <image name="top_highlighted" width="96" height="96"/>
+        <image name="top_normal" width="96" height="96"/>
+    </resources>
+</document>
