@@ -51,5 +51,8 @@ OC对象里有结构体属性时, 不可以直接修改结构体的值. 需要�
 
 为每个按钮设置不同的tag值, 根据sender.tag 就可以判断哪个按钮被点击了.
 
-# SAND 
+# tomCat 
 
+\- (**void**)performSelector:(**SEL**)aSelector withObject:(**nullable** **id**)anArgument afterDelay:(NSTimeInterval)delay;
+
+设置图片框在调用setAnimationImages:nil 方法的时候延迟执行.
