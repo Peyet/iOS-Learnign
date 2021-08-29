@@ -48,20 +48,59 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    self.pic;
-    self.imageView.image = [UIImage imageNamed:self.pic[0][@"icon"]];
+//    self.imageView.image = [UIImage imageNamed:self.pic[0][@"icon"]];
+//
+//    self.text.text = self.pic[0][@"title"];
+//
+//    self.lblIndex.text = [NSString stringWithFormat:@"1 / %lu", _pic.count];
+//
+//    self.leftButton.enabled = NO;
     
-    self.text.text = self.pic[0][@"title"];
-    
-    self.lblIndex.text = [NSString stringWithFormat:@"1 / %lu", _pic.count];
-    
-    self.leftButton.enabled = NO;
+    [self setData:0];
 }
 
 
 - (IBAction)next {
-    self.leftButton.enabled = YES;
-    
     self.index++;
+    [self setData:_index];
+    
+//    self.leftButton.enabled = YES;
+//
+//    self.index++;
+////    取出pic.plist中Array中的Dictionary元素
+//    NSDictionary *dicOfPic = self.pic[self.index];
+////    显示title
+//    _lblIndex.text = [NSString stringWithFormat:@"%d / %lu", _index + 1, self.pic.count];
+////    显示图片
+//    self.imageView.image = [UIImage imageNamed:dicOfPic[@"icon"]];
+////    显示介绍
+//    self.text.text = dicOfPic[@"title"];
+////    next按钮是否可点击
+//    if (self.index == self.pic.count-1) {
+//        self.rightButton.enabled = NO;
+//    } else {
+//         self.rightButton.enabled = YES;
+//    }
+}
+
+- (IBAction)previous {
+    self.index--;
+    [self setData:_index];
+    
+//    self.rightButton.enabled = YES;
+//
+//    self.index--;
+//
+//    self.lblIndex.text = [NSString stringWithFormat:@"%d / %lu", _index + 1, _pic.count];
+//
+//    self.imageView.image = [UIImage imageNamed:self.pic[self.index][@"icon"]];
+//
+//    self.text.text = self.pic[_index][@"title"];
+//
+//    _leftButton.enabled = _index != 0;
+}
+
+- (void)setData:(int)index {
 //    取出pic.plist中Array中的Dictionary元素
     NSDictionary *dicOfPic = self.pic[self.index];
 //    显示title
@@ -70,25 +109,9 @@
     self.imageView.image = [UIImage imageNamed:dicOfPic[@"icon"]];
 //    显示介绍
     self.text.text = dicOfPic[@"title"];
-//    next按钮是否可点击
-    if (self.index == self.pic.count-1) {
-        self.rightButton.enabled = NO;
-    } else {
-         self.rightButton.enabled = YES;
-    }
+
+    self.leftButton.enabled = self.index != 0;
+    self.rightButton.enabled = self.index != self.pic.count-1;
 }
 
-- (IBAction)previous {
-    self.rightButton.enabled = YES;
-    
-    self.index--;
-    
-    self.lblIndex.text = [NSString stringWithFormat:@"%d / %lu", _index + 1, _pic.count];
-    
-    self.imageView.image = [UIImage imageNamed:self.pic[self.index][@"icon"]];
-    
-    self.text.text = self.pic[_index][@"title"];
-    
-    _leftButton.enabled = _index != 0;
-}
 @end
