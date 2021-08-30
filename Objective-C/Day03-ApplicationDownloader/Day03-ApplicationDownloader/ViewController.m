@@ -21,7 +21,7 @@
         NSString *path = [[NSBundle mainBundle] pathForResource:@"app.plist" ofType:nil];
         _apps = [NSArray arrayWithContentsOfFile:path];
     }
-    NSLog(@"%@", _apps);
+//    NSLog(@"%@", _apps);
     return _apps;
 }
 

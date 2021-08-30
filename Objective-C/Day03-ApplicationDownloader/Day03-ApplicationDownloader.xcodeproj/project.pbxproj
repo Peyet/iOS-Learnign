@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4DBAB826DD1D0B007D12AC /* MyApp.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4DBAB726DD1D0B007D12AC /* MyApp.m */; };
 		DC8C8EB026DC9F5900795ADC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8C8EAF26DC9F5900795ADC /* AppDelegate.m */; };
 		DC8C8EB326DC9F5900795ADC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8C8EB226DC9F5900795ADC /* SceneDelegate.m */; };
 		DC8C8EB626DC9F5900795ADC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8C8EB526DC9F5900795ADC /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC4DBAB626DD1D0B007D12AC /* MyApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyApp.h; sourceTree = "<group>"; };
+		DC4DBAB726DD1D0B007D12AC /* MyApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyApp.m; sourceTree = "<group>"; };
 		DC8C8EAB26DC9F5900795ADC /* Day03-ApplicationDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day03-ApplicationDownloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8C8EAE26DC9F5900795ADC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC8C8EAF26DC9F5900795ADC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 				DC8C8EBF26DC9F5B00795ADC /* Info.plist */,
 				DC8C8EC726DC9FD300795ADC /* app.plist */,
 				DC8C8EC026DC9F5B00795ADC /* main.m */,
+				DC4DBAB626DD1D0B007D12AC /* MyApp.h */,
+				DC4DBAB726DD1D0B007D12AC /* MyApp.m */,
 			);
 			path = "Day03-ApplicationDownloader";
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4DBAB826DD1D0B007D12AC /* MyApp.m in Sources */,
 				DC8C8EB626DC9F5900795ADC /* ViewController.m in Sources */,
 				DC8C8EB026DC9F5900795ADC /* AppDelegate.m in Sources */,
 				DC8C8EC126DC9F5B00795ADC /* main.m in Sources */,
