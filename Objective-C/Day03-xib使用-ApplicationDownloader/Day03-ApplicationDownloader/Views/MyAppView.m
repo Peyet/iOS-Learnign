@@ -26,4 +26,11 @@
     self.lblName.text = self.model.name;
 }
 
++ (instancetype)appView {
+    // 获取xib文件 (当xib文件部署到手机上的时候, 就会变成*.nib)
+    MyAppView *appView = [[[NSBundle mainBundle] loadNibNamed:@"MyApp" owner:nil options:nil] firstObject];
+    
+    return appView;
+}
+
 @end

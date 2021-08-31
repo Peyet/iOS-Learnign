@@ -52,6 +52,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC4DBABE26DE5025007D12AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC4DBAB626DD1D0B007D12AC /* MyApp.h */,
+				DC4DBAB726DD1D0B007D12AC /* MyApp.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC4DBABF26DE5061007D12AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC8C8EB726DC9F5900795ADC /* Main.storyboard */,
+				DC8C8EBC26DC9F5B00795ADC /* LaunchScreen.storyboard */,
+				DC4DBAB926DDBE05007D12AC /* MyApp.xib */,
+				DC4DBABB26DE0151007D12AC /* MyAppView.h */,
+				DC4DBABC26DE0151007D12AC /* MyAppView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC4DBAC026DE5072007D12AC /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				DC8C8EB426DC9F5900795ADC /* ViewController.h */,
+				DC8C8EB526DC9F5900795ADC /* ViewController.m */,
+			);
+			path = Controlers;
+			sourceTree = "<group>";
+		};
+		DC4DBAC126DE5078007D12AC /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				DC8C8EAE26DC9F5900795ADC /* AppDelegate.h */,
+				DC8C8EAF26DC9F5900795ADC /* AppDelegate.m */,
+				DC8C8EB126DC9F5900795ADC /* SceneDelegate.h */,
+				DC8C8EB226DC9F5900795ADC /* SceneDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		DC8C8EA226DC9F5900795ADC = {
 			isa = PBXGroup;
 			children = (
@@ -71,23 +112,14 @@
 		DC8C8EAD26DC9F5900795ADC /* Day03-ApplicationDownloader */ = {
 			isa = PBXGroup;
 			children = (
-				DC8C8EAE26DC9F5900795ADC /* AppDelegate.h */,
-				DC8C8EAF26DC9F5900795ADC /* AppDelegate.m */,
-				DC8C8EB126DC9F5900795ADC /* SceneDelegate.h */,
-				DC8C8EB226DC9F5900795ADC /* SceneDelegate.m */,
-				DC8C8EB426DC9F5900795ADC /* ViewController.h */,
-				DC8C8EB526DC9F5900795ADC /* ViewController.m */,
-				DC8C8EB726DC9F5900795ADC /* Main.storyboard */,
+				DC4DBAC126DE5078007D12AC /* Others */,
+				DC4DBAC026DE5072007D12AC /* Controlers */,
+				DC4DBABF26DE5061007D12AC /* Views */,
+				DC4DBABE26DE5025007D12AC /* Models */,
 				DC8C8EBA26DC9F5B00795ADC /* Assets.xcassets */,
-				DC8C8EBC26DC9F5B00795ADC /* LaunchScreen.storyboard */,
 				DC8C8EBF26DC9F5B00795ADC /* Info.plist */,
 				DC8C8EC726DC9FD300795ADC /* app.plist */,
 				DC8C8EC026DC9F5B00795ADC /* main.m */,
-				DC4DBAB626DD1D0B007D12AC /* MyApp.h */,
-				DC4DBAB726DD1D0B007D12AC /* MyApp.m */,
-				DC4DBAB926DDBE05007D12AC /* MyApp.xib */,
-				DC4DBABB26DE0151007D12AC /* MyAppView.h */,
-				DC4DBABC26DE0151007D12AC /* MyAppView.m */,
 			);
 			path = "Day03-ApplicationDownloader";
 			sourceTree = "<group>";

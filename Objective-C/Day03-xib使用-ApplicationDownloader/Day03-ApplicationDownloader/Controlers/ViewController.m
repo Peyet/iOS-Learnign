@@ -62,9 +62,15 @@
     CGFloat marginY = marginX;
 
     for (int i = 0; i < self.apps.count; i++) {
+        
+        /*
         // 通过xib自动创建
         // 获取xib文件 (当xib文件部署到手机上的时候, 就会变成*.nib)
         MyAppView *appView = [[[NSBundle mainBundle] loadNibNamed:@"MyApp" owner:nil options:nil] firstObject];
+        */
+//        封装创建view的方法
+        MyAppView *appView = [MyAppView appView];
+        
         
         // 设置大小和位置
         CGFloat appX = marginX + (marginX + appW) * (i % colums);
