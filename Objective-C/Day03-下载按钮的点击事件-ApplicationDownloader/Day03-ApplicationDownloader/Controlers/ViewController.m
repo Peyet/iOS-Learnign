@@ -55,8 +55,7 @@
     int colums = 3;
     CGFloat viewWidth = self.view.frame.size.width;
     
-    CGFloat appW = 80;
-    CGFloat appH = 110;
+    CGFloat appW = 80, appH = 110;
     CGFloat marginTop = 100;
     CGFloat marginX = (viewWidth - appW * colums) / (colums + 1);
     CGFloat marginY = marginX;
