@@ -118,8 +118,31 @@
         CGFloat answerX = answerMarginX + i * (60 + answerMarginX);
         btnAnswer.frame = CGRectMake(answerX , 0, 60, 60);
         [self.answerView addSubview:btnAnswer];
+        
+        // 注册答案按钮单击事件
+        [btnAnswer addTarget:self action:@selector(btnAnswerClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
+
+/**
+    清空答案区的按钮文字
+ */
+- (void)btnAnswerClicked:(UIButton *)sender {
+    // 清空答案区的按钮文字
+    NSString *charactor = [sender currentTitle];
+    [sender setTitle:nil forState:UIControlStateNormal];
+
+    // 恢复待选按钮的文字. 通过比对tag来寻找按钮
+    for (UIButton *btn in self.optionView.subviews) {
+        if ([sender tag] == [btn tag]) {
+            self.optionView.userInteractionEnabled = YES;
+            btn.hidden = NO;
+            [sender setTag:-1];
+            break;
+        }
+    }
+}
+
 
 /**
   创建待选文字按钮
@@ -156,6 +179,9 @@
         CGFloat btnY = marginY + (marginOfbtn + btnH) * (i / countInRow);
         btn.frame = CGRectMake(btnX, btnY, btnW, btnH);
         
+        // 设置按钮的tag
+        [btn setTag:i];
+
         // add button to the superView
         [self.optionView addSubview:btn];
         
@@ -180,9 +206,23 @@
     for (UIButton *btn in self.answerView.subviews) {
         if ([btn currentTitle] == nil) {
             [btn setTitle:[sender currentTitle] forState:UIControlStateNormal];
+            [btn setTag:[sender tag]];
             break;
         }
     }
+    
+    // 检查答案区域的按钮是否已经满了.已满就禁用optionView
+    BOOL isFull = YES;
+    for (UIButton *btn in self.answerView.subviews) {
+        if ([btn currentTitle] == nil) {
+            isFull = NO;
+            break;
+        }
+    }
+    if (isFull) {
+        self.optionView.userInteractionEnabled = NO;
+    }
+    	
 }
 
 - (IBAction)btnBigPicture:(UIButton *)sender {
