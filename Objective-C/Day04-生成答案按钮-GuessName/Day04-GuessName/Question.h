@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *answer;
 @property (nonatomic, copy) NSString *icon;
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, strong) NSDictionary *options;
+@property (nonatomic, strong) NSArray *options;
+
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)questionWithDict:(NSDictionary *)dict;

@@ -90,7 +90,11 @@
      */
     [self makeAnswerButton:nextData];
     
-    //
+    
+    
+    // 创建待选文字按钮
+    [self makeOptionsButton:nextData];
+    
 }
 
 /**
@@ -114,6 +118,70 @@
         CGFloat answerX = answerMarginX + i * (60 + answerMarginX);
         btnAnswer.frame = CGRectMake(answerX , 0, 60, 60);
         [self.answerView addSubview:btnAnswer];
+    }
+}
+
+/**
+  创建待选文字按钮
+ */
+- (void)makeOptionsButton:(Question *)nextData {
+    // 清楚上次的待选文字按钮
+    [self.optionView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
+    // 获取当前待选按钮文字的数组
+    NSArray *arrayOfOptions = nextData.options;
+    
+    // 根据数组创建按钮
+    for (int i = 0; i < arrayOfOptions.count; i++) {
+        NSString *str = arrayOfOptions[i];
+        // 创建待选文字按钮
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        // 设置待选文字按钮背景
+        [btn setBackgroundImage:[UIImage imageNamed:@"btn_option"] forState:UIControlStateNormal];
+        [btn setBackgroundImage:[UIImage imageNamed: @"btn_option_heighlighted"] forState:UIControlStateHighlighted];
+        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+        // 设置待选按钮文字
+        [btn setTitle:str forState:UIControlStateNormal];
+        
+        // 设置按钮的frame
+        int countInRow = 7;
+        CGFloat btnW = 44;
+        CGFloat btnH = 44;
+        int marginOfbtn = 10;
+        CGFloat marginX = (self.view.frame.size.width - countInRow*btnW - (countInRow-1)*marginOfbtn)/2;
+        CGFloat marginY = marginX;
+        CGFloat btnX = marginX + (marginOfbtn + btnW) * (i % countInRow);
+        CGFloat btnY = marginY + (marginOfbtn + btnH) * (i / countInRow);
+        btn.frame = CGRectMake(btnX, btnY, btnW, btnH);
+        
+        // add button to the superView
+        [self.optionView addSubview:btn];
+        
+        // 为每个选项添加单击事件
+        [btn addTarget:self action:@selector(btnOptionsClicked:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    // 设置按钮的数据
+}
+
+/**
+ 待选文字按钮的单击事件
+ */
+- (void)btnOptionsClicked:(UIButton *)sender {
+
+    
+
+    // 隐藏被点击的按钮
+    sender.hidden = YES;
+
+    // 把当前被点击按钮的文字显示到答题区域
+//    NSString *str = [sender titleForState:<#(UIControlState)#>]; 获取指定状态下按钮的文字
+    for (UIButton *btn in self.answerView.subviews) {
+        if ([btn currentTitle] == nil) {
+            [btn setTitle:[sender currentTitle] forState:UIControlStateNormal];
+            break;
+        }
     }
 }
 
