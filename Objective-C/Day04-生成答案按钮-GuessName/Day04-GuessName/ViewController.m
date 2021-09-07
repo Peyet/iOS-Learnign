@@ -222,7 +222,36 @@
     if (isFull) {
         self.optionView.userInteractionEnabled = NO;
     }
-    	
+    
+    // 如果答案按钮被填满, 判断用户的答案与标准答案是否相同
+    BOOL isCorrect = NO;
+    Question *q = self.questions[_index];
+    NSMutableString *userAnswer = [NSMutableString new];
+    for (UIButton *btn in self.answerView.subviews) {
+        if ([btn currentTitle] != nil) {
+            [userAnswer appendString:[btn currentTitle]];
+        }
+    }
+    
+    // 判断答案是否正确, 以及将要执行的动作
+    if (isFull) {
+        if ([userAnswer isEqualToString:q.answer]) {
+            [self btnNextClicked:nil];
+            self.optionView.userInteractionEnabled = YES;
+        } else {
+            UILabel *lbl = [UILabel new];
+            [self.view addSubview:lbl];
+            lbl.text = @"the answer is not correct~ please try again";
+            lbl.frame = CGRectMake(30, 400, 0, 0);
+    //        lbl.backgroundColor = [UIColor greenColor];
+            [UIView animateWithDuration:2 animations:^{
+                lbl.frame = CGRectMake(30, 400, 350, 30);
+                lbl.backgroundColor = [UIColor greenColor];
+            } completion:^(BOOL finished) {
+                [lbl removeFromSuperview];
+            }];
+        }
+    }
 }
 
 - (IBAction)btnBigPicture:(UIButton *)sender {
