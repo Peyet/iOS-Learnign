@@ -54,7 +54,19 @@
 - (IBAction)btnNextClicked:(UIButton *)sender {
     NSLog(@"btnClick");
     self.index++;
-    
+    if (_index == self.questions.count) {
+        _index = -1;
+        [self btnNextClicked:nil];
+        self.btnNext.enabled = YES;
+        
+        // 弹出提示框
+//        UIAlertView 'UIAlertView' is deprecated: first deprecated in iOS 9.0 - UIAlertView is deprecated. Use UIAlertController with a preferredStyle of UIAlertControllerStyleAlert instead
+//        UIAlertController *alertCon = [UIAlertController alertControllerWithTitle:@"提示" message:@"恭喜通关🎉" preferredStyle:UIAlertControllerStyleActionSheet];
+//        [alertCon addAction:<#(nonnull UIAlertAction *)#>];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"tip" message:@"congradu" delegate:self cancelButtonTitle:@"ok" otherButtonTitles: @"01",nil];
+        [alertView show];
+        
+    } else {
     Question *nextData = self.questions[_index];
     /*
     self.progress.text = [NSString stringWithFormat:@"%d / %lu", self.index+1, self.questions.count];
@@ -94,7 +106,7 @@
     
     // 创建待选文字按钮
     [self makeOptionsButton:nextData];
-    
+}
 }
 
 /**
@@ -224,7 +236,6 @@
     }
     
     // 如果答案按钮被填满, 判断用户的答案与标准答案是否相同
-    BOOL isCorrect = NO;
     Question *q = self.questions[_index];
     NSMutableString *userAnswer = [NSMutableString new];
     for (UIButton *btn in self.answerView.subviews) {
