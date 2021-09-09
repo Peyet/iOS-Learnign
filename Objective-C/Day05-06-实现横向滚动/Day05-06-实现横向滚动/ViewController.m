@@ -11,6 +11,7 @@
 @interface ViewController () <UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
@@ -19,6 +20,25 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     int page = self.scrollView.contentOffset.x / 300;
     self.pageControl.currentPage = page;
+}
+
+/**
+ 即将拖拽的时候停止计时器
+ */
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    // 停止计时器.
+    // 调用invalidare 停止计时器, 这个计时器就不可以被重用了. 再次使用得创建一个新的计时器
+    [self.timer invalidate];
+    
+    self.timer = nil;
+}
+
+/**
+ 停止拖拽的时候开始计时器
+ */
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    // 重新创建一个新的计时器
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(scrollImage) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidLoad {
@@ -50,7 +70,7 @@
      
     
     // 添加计时器 实现图片的轮播
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(scrollImage) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(scrollImage) userInfo:nil repeats:YES];
 }
 
 /**
