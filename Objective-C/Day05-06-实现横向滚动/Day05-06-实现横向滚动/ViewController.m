@@ -39,6 +39,13 @@
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     // 重新创建一个新的计时器
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(scrollImage) userInfo:nil repeats:YES];
+    
+    //  改变self.timer的优先级
+    // 获取当前的消息循环对象
+    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+    // 改变当前timer对象的优先级
+    [runLoop addTimer:self.timer forMode:NSRunLoopCommonModes];
+
 }
 
 - (void)viewDidLoad {
@@ -71,6 +78,12 @@
     
     // 添加计时器 实现图片的轮播
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(scrollImage) userInfo:nil repeats:YES];
+    
+    //  改变self.timer的优先级
+    // 获取当前的消息循环对象
+    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+    // 改变当前timer对象的优先级
+    [runLoop addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
 /**
