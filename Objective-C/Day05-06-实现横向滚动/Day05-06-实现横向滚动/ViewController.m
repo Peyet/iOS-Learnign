@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController () <UIScrollViewDelegate> 
+@interface ViewController () <UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
@@ -49,7 +49,20 @@
     self.pageControl.currentPage = 0;
      
     
+    // 添加计时器 实现图片的轮播
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(scrollImage) userInfo:nil repeats:YES];
 }
 
+/**
+ 自动滚动图片
+ */
+- (void)scrollImage {
+    NSLog(@"timer was started....");
+    NSInteger totalPage = self.pageControl.numberOfPages;
+    NSInteger nextPage = (self.pageControl.currentPage + 1) % totalPage;
+    CGFloat OffsetX = nextPage * self.scrollView.frame.size.width;
+    [self.scrollView setContentOffset:CGPointMake(OffsetX, 0) animated:YES];
+    self.pageControl.currentPage = nextPage;
+}
 
 @end
