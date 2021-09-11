@@ -69,11 +69,31 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    // 创建单元格
+//    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    // 每次都创建单元格效率低下, 下面对单元格重用
+    // 在创建单元的时候指定一个“重用ID”
+    // 当需要新单元格时, 先去“缓冲池”中查找是否有与自己样式相同的单元格(即“重用ID”相同)
+    // 如果有拿出来修改,进行使用. 没有则新创建一个
+    
+    // 声明一个重用ID
+    static NSString *ID = @"hero_cell";
+    // 根据这个重用ID去“缓冲池”中查找对应的Cell
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        NSLog(@"===================");
+        // 创建新的单元格
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
     
     
+    
+    
+    // 获取模型数据
     Hero *hro = self.heros[indexPath.row];
     
+    
+    //设置数据
     cell.textLabel.text = hro.name;
     cell.detailTextLabel.text = hro.intro;
     cell.imageView.image = [UIImage imageNamed:hro.icon];
