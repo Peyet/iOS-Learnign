@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Group : NSObject
 
+@property (nonatomic, strong) NSArray *cars;
+@property (nonatomic, copy) NSString *title;
+
+- (instancetype)initWithDict:(NSDictionary *)dict;
++ (instancetype)groupWithDict:(NSDictionary *)dict;
+
 @end
 
 NS_ASSUME_NONNULL_END

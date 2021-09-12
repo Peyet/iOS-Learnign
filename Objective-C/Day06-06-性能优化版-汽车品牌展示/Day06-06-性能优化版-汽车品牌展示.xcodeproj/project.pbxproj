@@ -14,6 +14,9 @@
 		DCDD8FE126EDEC17006DC081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDD8FE026EDEC17006DC081 /* Assets.xcassets */; };
 		DCDD8FE426EDEC17006DC081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDD8FE226EDEC17006DC081 /* LaunchScreen.storyboard */; };
 		DCDD8FE726EDEC17006DC081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD8FE626EDEC17006DC081 /* main.m */; };
+		DCDD8FEE26EDEC27006DC081 /* cars_total.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCDD8FED26EDEC27006DC081 /* cars_total.plist */; };
+		DCDD8FF526EDEC8A006DC081 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD8FF426EDEC8A006DC081 /* Car.m */; };
+		DCDD8FF826EDEE82006DC081 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD8FF726EDEE82006DC081 /* Group.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		DCDD8FE326EDEC17006DC081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCDD8FE526EDEC17006DC081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCDD8FE626EDEC17006DC081 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCDD8FED26EDEC27006DC081 /* cars_total.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars_total.plist; sourceTree = "<group>"; };
+		DCDD8FF326EDEC8A006DC081 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		DCDD8FF426EDEC8A006DC081 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		DCDD8FF626EDEE82006DC081 /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		DCDD8FF726EDEE82006DC081 /* Group.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +69,56 @@
 		DCDD8FD326EDEC15006DC081 /* Day06-06-性能优化版-汽车品牌展示 */ = {
 			isa = PBXGroup;
 			children = (
+				DCDD8FF226EDEC63006DC081 /* Others */,
+				DCDD8FF126EDEC5A006DC081 /* Controllers */,
+				DCDD8FF026EDEC52006DC081 /* Views */,
+				DCDD8FEF26EDEC48006DC081 /* Models */,
+				DCDD8FE026EDEC17006DC081 /* Assets.xcassets */,
+				DCDD8FE526EDEC17006DC081 /* Info.plist */,
+				DCDD8FED26EDEC27006DC081 /* cars_total.plist */,
+				DCDD8FE626EDEC17006DC081 /* main.m */,
+			);
+			path = "Day06-06-性能优化版-汽车品牌展示";
+			sourceTree = "<group>";
+		};
+		DCDD8FEF26EDEC48006DC081 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD8FF326EDEC8A006DC081 /* Car.h */,
+				DCDD8FF426EDEC8A006DC081 /* Car.m */,
+				DCDD8FF626EDEE82006DC081 /* Group.h */,
+				DCDD8FF726EDEE82006DC081 /* Group.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DCDD8FF026EDEC52006DC081 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD8FDD26EDEC15006DC081 /* Main.storyboard */,
+				DCDD8FE226EDEC17006DC081 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCDD8FF126EDEC5A006DC081 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCDD8FDA26EDEC15006DC081 /* ViewController.h */,
+				DCDD8FDB26EDEC15006DC081 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DCDD8FF226EDEC63006DC081 /* Others */ = {
+			isa = PBXGroup;
+			children = (
 				DCDD8FD426EDEC15006DC081 /* AppDelegate.h */,
 				DCDD8FD526EDEC15006DC081 /* AppDelegate.m */,
 				DCDD8FD726EDEC15006DC081 /* SceneDelegate.h */,
 				DCDD8FD826EDEC15006DC081 /* SceneDelegate.m */,
-				DCDD8FDA26EDEC15006DC081 /* ViewController.h */,
-				DCDD8FDB26EDEC15006DC081 /* ViewController.m */,
-				DCDD8FDD26EDEC15006DC081 /* Main.storyboard */,
-				DCDD8FE026EDEC17006DC081 /* Assets.xcassets */,
-				DCDD8FE226EDEC17006DC081 /* LaunchScreen.storyboard */,
-				DCDD8FE526EDEC17006DC081 /* Info.plist */,
-				DCDD8FE626EDEC17006DC081 /* main.m */,
 			);
-			path = "Day06-06-性能优化版-汽车品牌展示";
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +180,7 @@
 			files = (
 				DCDD8FE426EDEC17006DC081 /* LaunchScreen.storyboard in Resources */,
 				DCDD8FE126EDEC17006DC081 /* Assets.xcassets in Resources */,
+				DCDD8FEE26EDEC27006DC081 /* cars_total.plist in Resources */,
 				DCDD8FDF26EDEC15006DC081 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDD8FF526EDEC8A006DC081 /* Car.m in Sources */,
 				DCDD8FDC26EDEC15006DC081 /* ViewController.m in Sources */,
 				DCDD8FD626EDEC15006DC081 /* AppDelegate.m in Sources */,
+				DCDD8FF826EDEE82006DC081 /* Group.m in Sources */,
 				DCDD8FE726EDEC17006DC081 /* main.m in Sources */,
 				DCDD8FD926EDEC15006DC081 /* SceneDelegate.m in Sources */,
 			);

@@ -7,7 +7,27 @@
 //
 
 #import "Group.h"
+#import "Car.h"
 
 @implementation Group
+
+- (instancetype)initWithDict:(NSDictionary *)dict {
+    if (self = [super init]) {
+        
+        [self setValuesForKeysWithDictionary:dict];
+        // 手动字典转模型
+        NSMutableArray *modelArrayOfCars = [NSMutableArray new];
+        for (NSDictionary *dict in self.cars) {
+            Car *car = [Car carWithDict:dict];
+            [modelArrayOfCars addObject:car];
+        }
+        self.cars = modelArrayOfCars;
+    }
+    return self;
+}
+
++ (instancetype)groupWithDict:(NSDictionary *)dict {
+    return [[self alloc] initWithDict:dict];
+}
 
 @end

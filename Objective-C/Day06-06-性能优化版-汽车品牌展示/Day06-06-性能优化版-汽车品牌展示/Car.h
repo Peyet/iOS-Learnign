@@ -12,6 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Car : NSObject
 
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *icon;
+
+- (instancetype) initWithDict:(NSDictionary *)dict;
+
++ (instancetype) carWithDict:(NSDictionary *)dict;
+
 @end
 
 NS_ASSUME_NONNULL_END
