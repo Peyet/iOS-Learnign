@@ -80,7 +80,17 @@
 }
 
 // 右侧的索引
-
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    // 第一种i写法
+//    NSMutableArray *arr = [NSMutableArray new];
+//    for (Group *group in self.groups) {
+//        [arr addObject:group.title];
+//    }
+//    return arr;
+    
+    // 第二种
+    return [self.groups valueForKey:@"title"];
+}
 
 
 @end
