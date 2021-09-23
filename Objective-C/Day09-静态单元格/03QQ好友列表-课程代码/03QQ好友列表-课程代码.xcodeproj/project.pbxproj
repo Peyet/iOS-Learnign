@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCB51C5126FACEE100F9F1FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB51C5026FACEE100F9F1FF /* AppDelegate.m */; };
+		DCB51C5426FACEE100F9F1FF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB51C5326FACEE100F9F1FF /* SceneDelegate.m */; };
+		DCB51C5A26FACEE100F9F1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB51C5826FACEE100F9F1FF /* Main.storyboard */; };
+		DCB51C5C26FACEE300F9F1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB51C5B26FACEE300F9F1FF /* Assets.xcassets */; };
+		DCB51C5F26FACEE300F9F1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB51C5D26FACEE300F9F1FF /* LaunchScreen.storyboard */; };
+		DCB51C6226FACEE300F9F1FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB51C6126FACEE300F9F1FF /* main.m */; };
+		DCB51C6E26FACF7500F9F1FF /* MyQQFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB51C6D26FACF7500F9F1FF /* MyQQFriendsTableViewController.m */; };
+		DCB51C7026FACFAB00F9F1FF /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCB51C6F26FACFAB00F9F1FF /* friends.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCB51C4C26FACEE100F9F1FF /* 03QQ好友列表-课程代码.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03QQ好友列表-课程代码.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB51C4F26FACEE100F9F1FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCB51C5026FACEE100F9F1FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCB51C5226FACEE100F9F1FF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DCB51C5326FACEE100F9F1FF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DCB51C5926FACEE100F9F1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCB51C5B26FACEE300F9F1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCB51C5E26FACEE300F9F1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCB51C6026FACEE300F9F1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB51C6126FACEE300F9F1FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCB51C6C26FACF7500F9F1FF /* MyQQFriendsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyQQFriendsTableViewController.h; sourceTree = "<group>"; };
+		DCB51C6D26FACF7500F9F1FF /* MyQQFriendsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyQQFriendsTableViewController.m; sourceTree = "<group>"; };
+		DCB51C6F26FACFAB00F9F1FF /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCB51C4926FACEE100F9F1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCB51C4326FACEE100F9F1FF = {
+			isa = PBXGroup;
+			children = (
+				DCB51C4E26FACEE100F9F1FF /* 03QQ好友列表-课程代码 */,
+				DCB51C4D26FACEE100F9F1FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCB51C4D26FACEE100F9F1FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCB51C4C26FACEE100F9F1FF /* 03QQ好友列表-课程代码.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCB51C4E26FACEE100F9F1FF /* 03QQ好友列表-课程代码 */ = {
+			isa = PBXGroup;
+			children = (
+				DCB51C6B26FACF0200F9F1FF /* Ohters */,
+				DCB51C6A26FACEFA00F9F1FF /* Controllers */,
+				DCB51C6926FACEF500F9F1FF /* Views */,
+				DCB51C6826FACEEE00F9F1FF /* Models */,
+				DCB51C5B26FACEE300F9F1FF /* Assets.xcassets */,
+				DCB51C6026FACEE300F9F1FF /* Info.plist */,
+				DCB51C6F26FACFAB00F9F1FF /* friends.plist */,
+				DCB51C6126FACEE300F9F1FF /* main.m */,
+			);
+			path = "03QQ好友列表-课程代码";
+			sourceTree = "<group>";
+		};
+		DCB51C6826FACEEE00F9F1FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DCB51C6926FACEF500F9F1FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCB51C5826FACEE100F9F1FF /* Main.storyboard */,
+				DCB51C5D26FACEE300F9F1FF /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCB51C6A26FACEFA00F9F1FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCB51C6C26FACF7500F9F1FF /* MyQQFriendsTableViewController.h */,
+				DCB51C6D26FACF7500F9F1FF /* MyQQFriendsTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DCB51C6B26FACF0200F9F1FF /* Ohters */ = {
+			isa = PBXGroup;
+			children = (
+				DCB51C4F26FACEE100F9F1FF /* AppDelegate.h */,
+				DCB51C5026FACEE100F9F1FF /* AppDelegate.m */,
+				DCB51C5226FACEE100F9F1FF /* SceneDelegate.h */,
+				DCB51C5326FACEE100F9F1FF /* SceneDelegate.m */,
+			);
+			path = Ohters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCB51C4B26FACEE100F9F1FF /* 03QQ好友列表-课程代码 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB51C6526FACEE300F9F1FF /* Build configuration list for PBXNativeTarget "03QQ好友列表-课程代码" */;
+			buildPhases = (
+				DCB51C4826FACEE100F9F1FF /* Sources */,
+				DCB51C4926FACEE100F9F1FF /* Frameworks */,
+				DCB51C4A26FACEE100F9F1FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "03QQ好友列表-课程代码";
+			productName = "03QQ好友列表-课程代码";
+			productReference = DCB51C4C26FACEE100F9F1FF /* 03QQ好友列表-课程代码.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCB51C4426FACEE100F9F1FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Peyet-Zhao";
+				TargetAttributes = {
+					DCB51C4B26FACEE100F9F1FF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DCB51C4726FACEE100F9F1FF /* Build configuration list for PBXProject "03QQ好友列表-课程代码" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCB51C4326FACEE100F9F1FF;
+			productRefGroup = DCB51C4D26FACEE100F9F1FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCB51C4B26FACEE100F9F1FF /* 03QQ好友列表-课程代码 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCB51C4A26FACEE100F9F1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB51C5F26FACEE300F9F1FF /* LaunchScreen.storyboard in Resources */,
+				DCB51C5C26FACEE300F9F1FF /* Assets.xcassets in Resources */,
+				DCB51C7026FACFAB00F9F1FF /* friends.plist in Resources */,
+				DCB51C5A26FACEE100F9F1FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCB51C4826FACEE100F9F1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB51C5126FACEE100F9F1FF /* AppDelegate.m in Sources */,
+				DCB51C6226FACEE300F9F1FF /* main.m in Sources */,
+				DCB51C6E26FACF7500F9F1FF /* MyQQFriendsTableViewController.m in Sources */,
+				DCB51C5426FACEE100F9F1FF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCB51C5826FACEE100F9F1FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCB51C5926FACEE100F9F1FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCB51C5D26FACEE300F9F1FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCB51C5E26FACEE300F9F1FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCB51C6326FACEE300F9F1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCB51C6426FACEE300F9F1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCB51C6626FACEE300F9F1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "03QQ好友列表-课程代码/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.-3QQ---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCB51C6726FACEE300F9F1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "03QQ好友列表-课程代码/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.-3QQ---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCB51C4726FACEE100F9F1FF /* Build configuration list for PBXProject "03QQ好友列表-课程代码" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB51C6326FACEE300F9F1FF /* Debug */,
+				DCB51C6426FACEE300F9F1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB51C6526FACEE300F9F1FF /* Build configuration list for PBXNativeTarget "03QQ好友列表-课程代码" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB51C6626FACEE300F9F1FF /* Debug */,
+				DCB51C6726FACEE300F9F1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCB51C4426FACEE100F9F1FF /* Project object */;
+}
