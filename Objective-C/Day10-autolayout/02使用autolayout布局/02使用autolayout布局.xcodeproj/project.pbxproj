@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCB51CF326FD7E7900F9F1FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB51CF226FD7E7900F9F1FF /* AppDelegate.m */; };
+		DCB51CF626FD7E7900F9F1FF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB51CF526FD7E7900F9F1FF /* SceneDelegate.m */; };
+		DCB51CF926FD7E7900F9F1FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB51CF826FD7E7900F9F1FF /* ViewController.m */; };
+		DCB51CFC26FD7E7900F9F1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB51CFA26FD7E7900F9F1FF /* Main.storyboard */; };
+		DCB51CFE26FD7E7A00F9F1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB51CFD26FD7E7A00F9F1FF /* Assets.xcassets */; };
+		DCB51D0126FD7E7A00F9F1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB51CFF26FD7E7A00F9F1FF /* LaunchScreen.storyboard */; };
+		DCB51D0426FD7E7A00F9F1FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB51D0326FD7E7A00F9F1FF /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCB51CEE26FD7E7900F9F1FF /* 02使用autolayout布局.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02使用autolayout布局.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB51CF126FD7E7900F9F1FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCB51CF226FD7E7900F9F1FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCB51CF426FD7E7900F9F1FF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DCB51CF526FD7E7900F9F1FF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DCB51CF726FD7E7900F9F1FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DCB51CF826FD7E7900F9F1FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCB51CFB26FD7E7900F9F1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCB51CFD26FD7E7A00F9F1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCB51D0026FD7E7A00F9F1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCB51D0226FD7E7A00F9F1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB51D0326FD7E7A00F9F1FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCB51CEB26FD7E7900F9F1FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCB51CE526FD7E7800F9F1FF = {
+			isa = PBXGroup;
+			children = (
+				DCB51CF026FD7E7900F9F1FF /* 02使用autolayout布局 */,
+				DCB51CEF26FD7E7900F9F1FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCB51CEF26FD7E7900F9F1FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCB51CEE26FD7E7900F9F1FF /* 02使用autolayout布局.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCB51CF026FD7E7900F9F1FF /* 02使用autolayout布局 */ = {
+			isa = PBXGroup;
+			children = (
+				DCB51CF126FD7E7900F9F1FF /* AppDelegate.h */,
+				DCB51CF226FD7E7900F9F1FF /* AppDelegate.m */,
+				DCB51CF426FD7E7900F9F1FF /* SceneDelegate.h */,
+				DCB51CF526FD7E7900F9F1FF /* SceneDelegate.m */,
+				DCB51CF726FD7E7900F9F1FF /* ViewController.h */,
+				DCB51CF826FD7E7900F9F1FF /* ViewController.m */,
+				DCB51CFA26FD7E7900F9F1FF /* Main.storyboard */,
+				DCB51CFD26FD7E7A00F9F1FF /* Assets.xcassets */,
+				DCB51CFF26FD7E7A00F9F1FF /* LaunchScreen.storyboard */,
+				DCB51D0226FD7E7A00F9F1FF /* Info.plist */,
+				DCB51D0326FD7E7A00F9F1FF /* main.m */,
+			);
+			path = "02使用autolayout布局";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCB51CED26FD7E7900F9F1FF /* 02使用autolayout布局 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCB51D0726FD7E7A00F9F1FF /* Build configuration list for PBXNativeTarget "02使用autolayout布局" */;
+			buildPhases = (
+				DCB51CEA26FD7E7900F9F1FF /* Sources */,
+				DCB51CEB26FD7E7900F9F1FF /* Frameworks */,
+				DCB51CEC26FD7E7900F9F1FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02使用autolayout布局";
+			productName = "02使用autolayout布局";
+			productReference = DCB51CEE26FD7E7900F9F1FF /* 02使用autolayout布局.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCB51CE626FD7E7800F9F1FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Peyet-Zhao";
+				TargetAttributes = {
+					DCB51CED26FD7E7900F9F1FF = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DCB51CE926FD7E7800F9F1FF /* Build configuration list for PBXProject "02使用autolayout布局" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCB51CE526FD7E7800F9F1FF;
+			productRefGroup = DCB51CEF26FD7E7900F9F1FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCB51CED26FD7E7900F9F1FF /* 02使用autolayout布局 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCB51CEC26FD7E7900F9F1FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB51D0126FD7E7A00F9F1FF /* LaunchScreen.storyboard in Resources */,
+				DCB51CFE26FD7E7A00F9F1FF /* Assets.xcassets in Resources */,
+				DCB51CFC26FD7E7900F9F1FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCB51CEA26FD7E7900F9F1FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB51CF926FD7E7900F9F1FF /* ViewController.m in Sources */,
+				DCB51CF326FD7E7900F9F1FF /* AppDelegate.m in Sources */,
+				DCB51D0426FD7E7A00F9F1FF /* main.m in Sources */,
+				DCB51CF626FD7E7900F9F1FF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCB51CFA26FD7E7900F9F1FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCB51CFB26FD7E7900F9F1FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCB51CFF26FD7E7A00F9F1FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCB51D0026FD7E7A00F9F1FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCB51D0526FD7E7A00F9F1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCB51D0626FD7E7A00F9F1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCB51D0826FD7E7A00F9F1FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "02使用autolayout布局/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.-2--autolayout--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCB51D0926FD7E7A00F9F1FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "02使用autolayout布局/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.-2--autolayout--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCB51CE926FD7E7800F9F1FF /* Build configuration list for PBXProject "02使用autolayout布局" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB51D0526FD7E7A00F9F1FF /* Debug */,
+				DCB51D0626FD7E7A00F9F1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCB51D0726FD7E7A00F9F1FF /* Build configuration list for PBXNativeTarget "02使用autolayout布局" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB51D0826FD7E7A00F9F1FF /* Debug */,
+				DCB51D0926FD7E7A00F9F1FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCB51CE626FD7E7800F9F1FF /* Project object */;
+}
