@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-qf-aNP" userLabel="ViewTop">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点餐系统" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdv-nT-bF9">
+                                        <rect key="frame" x="162.5" y="12" width="89.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsS-kH-24p">
+                                        <rect key="frame" x="10" y="10" width="62" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="随机点餐"/>
+                                        <connections>
+                                            <action selector="btnRandom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZO-4y-9z3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Sdv-nT-bF9" firstAttribute="centerY" secondItem="ya5-qf-aNP" secondAttribute="centerY" id="BN2-Cf-kaI"/>
+                                    <constraint firstAttribute="height" constant="50" id="J92-7h-5vS"/>
+                                    <constraint firstItem="XsS-kH-24p" firstAttribute="centerY" secondItem="ya5-qf-aNP" secondAttribute="centerY" id="Jrp-Mr-fkz"/>
+                                    <constraint firstItem="XsS-kH-24p" firstAttribute="leading" secondItem="ya5-qf-aNP" secondAttribute="leading" constant="10" id="LLD-qH-cgv"/>
+                                    <constraint firstItem="Sdv-nT-bF9" firstAttribute="centerX" secondItem="ya5-qf-aNP" secondAttribute="centerX" id="qTf-p1-6yk"/>
+                                </constraints>
+                            </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gj-bS-JOb">
+                                <rect key="frame" x="0.0" y="680" width="414" height="216"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="s5c-UK-3Qs"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3z1-TL-7PY"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmD-Mp-aEN" userLabel="Selection">
+                                <rect key="frame" x="0.0" y="94" width="414" height="586"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMC-su-qky" userLabel="水果">
+                                        <rect key="frame" x="86.5" y="173" width="101" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主菜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Daq-oG-OlN">
+                                        <rect key="frame" x="86.5" y="263" width="101" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主菜选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCX-b1-6F9">
+                                        <rect key="frame" x="227.5" y="275" width="122" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酒水" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZ4-gk-aK5">
+                                        <rect key="frame" x="86.5" y="353" width="101" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酒水选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vf-JJ-Oav">
+                                        <rect key="frame" x="227.5" y="365" width="122" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水果选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg1-fB-MJN" userLabel="水果选择">
+                                        <rect key="frame" x="227.5" y="185" width="122" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="OZ4-gk-aK5" firstAttribute="top" secondItem="Daq-oG-OlN" secondAttribute="bottom" constant="30" id="2Cy-8u-mAz"/>
+                                    <constraint firstItem="Daq-oG-OlN" firstAttribute="top" secondItem="hMC-su-qky" secondAttribute="bottom" constant="30" id="5pC-e8-efA"/>
+                                    <constraint firstItem="Daq-oG-OlN" firstAttribute="centerY" secondItem="RmD-Mp-aEN" secondAttribute="centerY" id="7jo-zn-yG9"/>
+                                    <constraint firstItem="7vf-JJ-Oav" firstAttribute="centerY" secondItem="OZ4-gk-aK5" secondAttribute="centerY" id="9cz-4a-jtg"/>
+                                    <constraint firstItem="hg1-fB-MJN" firstAttribute="centerY" secondItem="hMC-su-qky" secondAttribute="centerY" id="REx-3K-ug5"/>
+                                    <constraint firstItem="Daq-oG-OlN" firstAttribute="leading" secondItem="hMC-su-qky" secondAttribute="leading" id="Ukg-4e-xJU"/>
+                                    <constraint firstItem="uCX-b1-6F9" firstAttribute="centerY" secondItem="Daq-oG-OlN" secondAttribute="centerY" id="cuZ-s1-TaR"/>
+                                    <constraint firstItem="OZ4-gk-aK5" firstAttribute="leading" secondItem="hMC-su-qky" secondAttribute="leading" id="kQc-QG-7a1"/>
+                                    <constraint firstItem="uCX-b1-6F9" firstAttribute="leading" secondItem="hg1-fB-MJN" secondAttribute="leading" id="nKQ-Jr-89z"/>
+                                    <constraint firstItem="7vf-JJ-Oav" firstAttribute="leading" secondItem="hg1-fB-MJN" secondAttribute="leading" id="pQa-XC-wjU"/>
+                                    <constraint firstItem="uCX-b1-6F9" firstAttribute="leading" secondItem="Daq-oG-OlN" secondAttribute="trailing" constant="40" id="uH9-Zh-QRf"/>
+                                    <constraint firstItem="Daq-oG-OlN" firstAttribute="centerX" secondItem="RmD-Mp-aEN" secondAttribute="centerX" constant="-70" id="y18-vh-dgV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9gj-bS-JOb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6UF-65-VIB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ya5-qf-aNP" secondAttribute="trailing" id="B7R-gV-qrd"/>
+                            <constraint firstItem="ya5-qf-aNP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DoV-vZ-xQ1"/>
+                            <constraint firstItem="9gj-bS-JOb" firstAttribute="top" secondItem="RmD-Mp-aEN" secondAttribute="bottom" id="Kw0-Tj-l66"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RmD-Mp-aEN" secondAttribute="trailing" id="Nfu-N2-g4u"/>
+                            <constraint firstItem="ya5-qf-aNP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qbg-8j-Eka"/>
+                            <constraint firstItem="RmD-Mp-aEN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ra3-Cq-w4h"/>
+                            <constraint firstAttribute="bottom" secondItem="9gj-bS-JOb" secondAttribute="bottom" id="X8Y-mm-iDl"/>
+                            <constraint firstItem="9gj-bS-JOb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dHU-wX-BoX"/>
+                            <constraint firstItem="RmD-Mp-aEN" firstAttribute="top" secondItem="ya5-qf-aNP" secondAttribute="bottom" id="joP-We-mWq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9gj-bS-JOb" secondAttribute="trailing" id="rZo-og-EwG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblDrink" destination="7vf-JJ-Oav" id="xIg-Pr-r24"/>
+                        <outlet property="lblFruit" destination="hg1-fB-MJN" id="hgx-7t-5ms"/>
+                        <outlet property="lblMainFood" destination="uCX-b1-6F9" id="wlF-Z5-GeG"/>
+                        <outlet property="pickerView" destination="9gj-bS-JOb" id="b4m-fJ-5Vq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+</document>
