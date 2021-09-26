@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iT-fU-gN3">
+                                <rect key="frame" x="0.0" y="660" width="414" height="216"/>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="iI4-fg-64D"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OMz-gM-ywP"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIm-uu-Few" userLabel="省">
+                                <rect key="frame" x="54" y="570" width="126" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1x-dF-rbu" userLabel="市">
+                                <rect key="frame" x="239" y="582" width="76.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="x1x-dF-rbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="70" id="1Vf-L7-u3p"/>
+                            <constraint firstAttribute="trailing" secondItem="1iT-fU-gN3" secondAttribute="trailing" id="5z7-g1-P51"/>
+                            <constraint firstItem="x1x-dF-rbu" firstAttribute="centerY" secondItem="LIm-uu-Few" secondAttribute="centerY" id="U2c-kh-zwG"/>
+                            <constraint firstAttribute="bottom" secondItem="1iT-fU-gN3" secondAttribute="bottom" constant="20" id="psH-it-dL1"/>
+                            <constraint firstItem="1iT-fU-gN3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vRd-g4-kHK"/>
+                            <constraint firstItem="LIm-uu-Few" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-90" id="xJ5-0h-qul"/>
+                            <constraint firstItem="1iT-fU-gN3" firstAttribute="top" secondItem="LIm-uu-Few" secondAttribute="bottom" constant="30" id="z0O-kn-bID"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="city" destination="x1x-dF-rbu" id="KRi-Fk-ssh"/>
+                        <outlet property="pickerView" destination="1iT-fU-gN3" id="tUn-OA-uAz"/>
+                        <outlet property="province" destination="LIm-uu-Few" id="T7g-kl-OHC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+</document>
