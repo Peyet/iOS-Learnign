@@ -1,0 +1,16 @@
+//
+//  SceneDelegate.h
+//  04-日期选择-datePicker
+//
+//  Created by Peyet-Zhao on 2021/9/27.
+//  Copyright © 2021 Peyet-Zhao. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow * window;
+
+@end
+
