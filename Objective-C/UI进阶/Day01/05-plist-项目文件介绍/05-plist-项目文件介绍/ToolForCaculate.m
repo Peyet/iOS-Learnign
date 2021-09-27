@@ -10,4 +10,8 @@
 
 @implementation ToolForCaculate
 
+- (int)caculateWithA:(int)a andB:(int)b {
+    return a + b;
+}
+
 @end

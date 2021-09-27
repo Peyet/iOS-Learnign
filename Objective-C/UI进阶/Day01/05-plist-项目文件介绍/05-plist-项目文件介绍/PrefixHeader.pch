@@ -6,10 +6,19 @@
 //  Copyright © 2021 Peyet-Zhao. All rights reserved.
 //
 
+#ifdef __OBJC__
+
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+// 头文件
+#import "ToolForCaculate.h"
+// 常用宏
+
+
 #endif /* PrefixHeader_pch */
+
+#endif
