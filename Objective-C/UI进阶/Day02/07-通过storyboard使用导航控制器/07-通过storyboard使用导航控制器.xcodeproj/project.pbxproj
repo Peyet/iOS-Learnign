@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC92549A2704A9620013B546 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9254992704A9620013B546 /* AppDelegate.m */; };
+		DC92549D2704A9620013B546 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC92549C2704A9620013B546 /* SceneDelegate.m */; };
+		DC9254A32704A9620013B546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9254A12704A9620013B546 /* Main.storyboard */; };
+		DC9254A52704A9640013B546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC9254A42704A9640013B546 /* Assets.xcassets */; };
+		DC9254A82704A9640013B546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC9254A62704A9640013B546 /* LaunchScreen.storyboard */; };
+		DC9254AB2704A9640013B546 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9254AA2704A9640013B546 /* main.m */; };
+		DC9254B42704AD110013B546 /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9254B32704AD110013B546 /* RedViewController.m */; };
+		DC9254B72704AD230013B546 /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9254B62704AD230013B546 /* GreenViewController.m */; };
+		DC9254BA2704AD300013B546 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9254B92704AD300013B546 /* BlueViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC9254952704A9620013B546 /* 07-通过storyboard使用导航控制器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "07-通过storyboard使用导航控制器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC9254982704A9620013B546 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC9254992704A9620013B546 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC92549B2704A9620013B546 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DC92549C2704A9620013B546 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DC9254A22704A9620013B546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC9254A42704A9640013B546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC9254A72704A9640013B546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC9254A92704A9640013B546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9254AA2704A9640013B546 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC9254B22704AD110013B546 /* RedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
+		DC9254B32704AD110013B546 /* RedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
+		DC9254B52704AD230013B546 /* GreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
+		DC9254B62704AD230013B546 /* GreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
+		DC9254B82704AD300013B546 /* BlueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		DC9254B92704AD300013B546 /* BlueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC9254922704A9620013B546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC92548C2704A9620013B546 = {
+			isa = PBXGroup;
+			children = (
+				DC9254972704A9620013B546 /* 07-通过storyboard使用导航控制器 */,
+				DC9254962704A9620013B546 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC9254962704A9620013B546 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC9254952704A9620013B546 /* 07-通过storyboard使用导航控制器.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC9254972704A9620013B546 /* 07-通过storyboard使用导航控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				DC9254B12704ACF70013B546 /* Controllers */,
+				DC9254982704A9620013B546 /* AppDelegate.h */,
+				DC9254992704A9620013B546 /* AppDelegate.m */,
+				DC92549B2704A9620013B546 /* SceneDelegate.h */,
+				DC92549C2704A9620013B546 /* SceneDelegate.m */,
+				DC9254A12704A9620013B546 /* Main.storyboard */,
+				DC9254A42704A9640013B546 /* Assets.xcassets */,
+				DC9254A62704A9640013B546 /* LaunchScreen.storyboard */,
+				DC9254A92704A9640013B546 /* Info.plist */,
+				DC9254AA2704A9640013B546 /* main.m */,
+			);
+			path = "07-通过storyboard使用导航控制器";
+			sourceTree = "<group>";
+		};
+		DC9254B12704ACF70013B546 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC9254B22704AD110013B546 /* RedViewController.h */,
+				DC9254B32704AD110013B546 /* RedViewController.m */,
+				DC9254B52704AD230013B546 /* GreenViewController.h */,
+				DC9254B62704AD230013B546 /* GreenViewController.m */,
+				DC9254B82704AD300013B546 /* BlueViewController.h */,
+				DC9254B92704AD300013B546 /* BlueViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC9254942704A9620013B546 /* 07-通过storyboard使用导航控制器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9254AE2704A9640013B546 /* Build configuration list for PBXNativeTarget "07-通过storyboard使用导航控制器" */;
+			buildPhases = (
+				DC9254912704A9620013B546 /* Sources */,
+				DC9254922704A9620013B546 /* Frameworks */,
+				DC9254932704A9620013B546 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "07-通过storyboard使用导航控制器";
+			productName = "07-通过storyboard使用导航控制器";
+			productReference = DC9254952704A9620013B546 /* 07-通过storyboard使用导航控制器.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC92548D2704A9620013B546 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Peyet-Zhao";
+				TargetAttributes = {
+					DC9254942704A9620013B546 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DC9254902704A9620013B546 /* Build configuration list for PBXProject "07-通过storyboard使用导航控制器" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC92548C2704A9620013B546;
+			productRefGroup = DC9254962704A9620013B546 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC9254942704A9620013B546 /* 07-通过storyboard使用导航控制器 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC9254932704A9620013B546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9254A82704A9640013B546 /* LaunchScreen.storyboard in Resources */,
+				DC9254A52704A9640013B546 /* Assets.xcassets in Resources */,
+				DC9254A32704A9620013B546 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC9254912704A9620013B546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9254B42704AD110013B546 /* RedViewController.m in Sources */,
+				DC92549A2704A9620013B546 /* AppDelegate.m in Sources */,
+				DC9254BA2704AD300013B546 /* BlueViewController.m in Sources */,
+				DC9254B72704AD230013B546 /* GreenViewController.m in Sources */,
+				DC9254AB2704A9640013B546 /* main.m in Sources */,
+				DC92549D2704A9620013B546 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC9254A12704A9620013B546 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9254A22704A9620013B546 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC9254A62704A9640013B546 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9254A72704A9640013B546 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC9254AC2704A9640013B546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC9254AD2704A9640013B546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC9254AF2704A9640013B546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "07-通过storyboard使用导航控制器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.-7---storyboard-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC9254B02704A9640013B546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "07-通过storyboard使用导航控制器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.peyet.iOS.-7---storyboard-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC9254902704A9620013B546 /* Build configuration list for PBXProject "07-通过storyboard使用导航控制器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9254AC2704A9640013B546 /* Debug */,
+				DC9254AD2704A9640013B546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9254AE2704A9640013B546 /* Build configuration list for PBXNativeTarget "07-通过storyboard使用导航控制器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9254AF2704A9640013B546 /* Debug */,
+				DC9254B02704A9640013B546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC92548D2704A9620013B546 /* Project object */;
+}
