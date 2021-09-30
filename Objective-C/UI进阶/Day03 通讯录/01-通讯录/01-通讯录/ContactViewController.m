@@ -18,6 +18,9 @@
     [super viewDidLoad];
     // 注销
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStylePlain target:self action:@selector(logOut)];
+    
+    NSString *title = [NSString stringWithFormat:@"%@的联系人", self.userName];
+    self.navigationItem.title = title;
 }
 
 - (void)logOut {

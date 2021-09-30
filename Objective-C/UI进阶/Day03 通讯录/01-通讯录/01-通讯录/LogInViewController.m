@@ -8,6 +8,7 @@
 
 #import "LogInViewController.h"
 #import "MBProgressHUD+Ex.h"
+#import "ContactViewController.h"
 
 @interface LogInViewController ()
 
@@ -56,6 +57,12 @@
     
     });
     
+}
+
+// 只要使用segue跳转, 都会调用这个方法
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ContactViewController *contact = segue.destinationViewController;
+    contact.userName = self.userNameField.text;
 }
 
 /*

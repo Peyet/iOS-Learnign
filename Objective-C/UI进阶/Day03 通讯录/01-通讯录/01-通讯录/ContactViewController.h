@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ContactViewController : UITableViewController
 
+@property (nonatomic, copy) NSString *userName;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
