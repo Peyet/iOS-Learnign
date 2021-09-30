@@ -17,6 +17,7 @@
 		DCE9AA6D2705F98E0090270A /* MBProgressHUD+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA682705F98E0090270A /* MBProgressHUD+Ex.m */; };
 		DCE9AA6E2705F98E0090270A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA692705F98E0090270A /* MBProgressHUD.m */; };
 		DCE9AA6F2705F98E0090270A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCE9AA6C2705F98E0090270A /* MBProgressHUD.bundle */; };
+		DCE9AA722705FE0F0090270A /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA712705FE0F0090270A /* ContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		DCE9AA6A2705F98E0090270A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		DCE9AA6B2705F98E0090270A /* MBProgressHUD+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Ex.h"; sourceTree = "<group>"; };
 		DCE9AA6C2705F98E0090270A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		DCE9AA702705FE0F0090270A /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		DCE9AA712705FE0F0090270A /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				DCE9AA5D2705B4BE0090270A /* main.m */,
 				DCE9AA642705E6A40090270A /* LogInViewController.h */,
 				DCE9AA652705E6A40090270A /* LogInViewController.m */,
+				DCE9AA702705FE0F0090270A /* ContactViewController.h */,
+				DCE9AA712705FE0F0090270A /* ContactViewController.m */,
 			);
 			path = "01-通讯录";
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE9AA722705FE0F0090270A /* ContactViewController.m in Sources */,
 				DCE9AA662705E6A40090270A /* LogInViewController.m in Sources */,
 				DCE9AA6E2705F98E0090270A /* MBProgressHUD.m in Sources */,
 				DCE9AA6D2705F98E0090270A /* MBProgressHUD+Ex.m in Sources */,

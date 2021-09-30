@@ -28,6 +28,7 @@
     [self.passWordField addTarget:self action:@selector(textChanged) forControlEvents:UIControlEventEditingChanged];
     
     [self.logInButton addTarget:self action:@selector(logIn) forControlEvents:UIControlEventTouchUpInside];
+    [self textChanged];
 }
 
 - (void)textChanged {
@@ -40,7 +41,7 @@
     [MBProgressHUD showMessage:@"正在登录"];
     
     // 延时3秒钟
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         // 隐藏提示
         [MBProgressHUD hideHUD];
