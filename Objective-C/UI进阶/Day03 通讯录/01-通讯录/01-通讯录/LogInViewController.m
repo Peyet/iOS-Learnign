@@ -7,6 +7,7 @@
 //
 
 #import "LogInViewController.h"
+#import "MBProgressHUD+Ex.h"
 
 @interface LogInViewController ()
 
@@ -35,9 +36,25 @@
 }
 
 - (void)logIn {
-    if ([self.userNameField.text isEqualToString:@"1"] && [self.passWordField.text isEqualToString:@"1"]) {
-        [self performSegueWithIdentifier:@"logInToContact" sender:self];
-    }
+    // 显示提示 正在登录
+    [MBProgressHUD showMessage:@"正在登录"];
+    
+    // 延时3秒钟
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        // 隐藏提示
+        [MBProgressHUD hideHUD];
+        if ([self.userNameField.text isEqualToString:@"1"] && [self.passWordField.text isEqualToString:@"1"]) {
+            
+            [self performSegueWithIdentifier:@"logInToContact" sender:self];
+            [MBProgressHUD showSuccess:@"登陆成功"];
+        } else {
+            // 提示错误
+            [MBProgressHUD showError:@"用户名或密码错误"];
+        }
+    
+    });
+    
 }
 
 /*
