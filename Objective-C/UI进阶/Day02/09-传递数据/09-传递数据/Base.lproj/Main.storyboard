@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fp1-jo-wTy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RVO-1q-ELt">
+            <objects>
+                <navigationController id="fp1-jo-wTy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9W2-gf-kHu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sg8-dR-KcJ" kind="relationship" relationship="rootViewController" id="rlA-CV-F1u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yqp-bY-I4N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1301" y="174"/>
+        </scene>
+        <!--Red View Controller-->
+        <scene sceneID="pE7-fi-Gll">
+            <objects>
+                <viewController id="sg8-dR-KcJ" userLabel="Red View Controller" customClass="RedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QSa-d8-dhT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eww-5E-dZl">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="跳转到绿色">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qHO-pm-P16" kind="show" id="Ula-vh-l9s"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tzz-Og-AH6">
+                                <rect key="frame" x="20" y="379" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xxH-n4-kxk" firstAttribute="trailing" secondItem="Tzz-Og-AH6" secondAttribute="trailing" constant="20" id="OOV-vt-l5X"/>
+                            <constraint firstItem="eww-5E-dZl" firstAttribute="centerY" secondItem="QSa-d8-dhT" secondAttribute="centerY" id="PL8-jx-XFc"/>
+                            <constraint firstItem="eww-5E-dZl" firstAttribute="centerX" secondItem="QSa-d8-dhT" secondAttribute="centerX" id="cVc-7D-IEJ"/>
+                            <constraint firstItem="Tzz-Og-AH6" firstAttribute="leading" secondItem="xxH-n4-kxk" secondAttribute="leading" constant="20" id="dX7-T5-B9W"/>
+                            <constraint firstItem="Tzz-Og-AH6" firstAttribute="centerX" secondItem="QSa-d8-dhT" secondAttribute="centerX" id="plB-TZ-WQe"/>
+                            <constraint firstItem="eww-5E-dZl" firstAttribute="top" secondItem="Tzz-Og-AH6" secondAttribute="bottom" constant="20" id="za7-Cl-Rrw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xxH-n4-kxk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RFh-Pt-X9h"/>
+                    <connections>
+                        <outlet property="textField" destination="Tzz-Og-AH6" id="aCs-8m-mED"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgl-fo-Pcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623" y="173"/>
+        </scene>
+        <!--Green View Controller-->
+        <scene sceneID="BZT-Ov-uUo">
+            <objects>
+                <viewController id="qHO-pm-P16" userLabel="Green View Controller" customClass="GreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dXC-8f-ZKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRG-Lv-xal">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="跳转到蓝色"/>
+                                <connections>
+                                    <segue destination="vgu-St-JIz" kind="show" id="JRL-xI-pQP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cF-Zt-AI5">
+                                <rect key="frame" x="168.5" y="483" width="77" height="30"/>
+                                <state key="normal" title="返回到红色">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToRed:" destination="qHO-pm-P16" eventType="touchUpInside" id="1hm-ho-uIL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IRG-Lv-xal" firstAttribute="centerX" secondItem="dXC-8f-ZKQ" secondAttribute="centerX" id="T1L-cX-mPD"/>
+                            <constraint firstItem="9cF-Zt-AI5" firstAttribute="top" secondItem="IRG-Lv-xal" secondAttribute="bottom" constant="20" id="X0Z-Cr-jUb"/>
+                            <constraint firstItem="9cF-Zt-AI5" firstAttribute="centerX" secondItem="dXC-8f-ZKQ" secondAttribute="centerX" id="ast-bU-apn"/>
+                            <constraint firstItem="IRG-Lv-xal" firstAttribute="centerY" secondItem="dXC-8f-ZKQ" secondAttribute="centerY" id="hFq-df-tQR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="czy-PQ-V6g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="csx-gY-1ms"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pj-sb-gFn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="173"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="Vhn-Vw-u4N">
+            <objects>
+                <viewController id="vgu-St-JIz" userLabel="Blue View Controller" customClass="BlueViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YMn-pI-gIx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYm-xX-wAu">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="返回到绿色">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToGreen:" destination="vgu-St-JIz" eventType="touchUpInside" id="6vr-9q-dvu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fM7-dY-iMO">
+                                <rect key="frame" x="153" y="482" width="108" height="30"/>
+                                <state key="normal" title="返回到根控制器">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToRootViewController:" destination="vgu-St-JIz" eventType="touchUpInside" id="Kk7-or-eO3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMu-bS-gO1">
+                                <rect key="frame" x="145.5" y="533" width="123" height="30"/>
+                                <state key="normal" title="返回到指定控制器">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToSpecifyViewCOntroller:" destination="vgu-St-JIz" eventType="touchUpInside" id="1lL-xY-ICS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KYm-xX-wAu" firstAttribute="centerX" secondItem="YMn-pI-gIx" secondAttribute="centerX" id="Slo-Qp-xrh"/>
+                            <constraint firstItem="fM7-dY-iMO" firstAttribute="centerX" secondItem="YMn-pI-gIx" secondAttribute="centerX" id="WBh-dk-08m"/>
+                            <constraint firstItem="dMu-bS-gO1" firstAttribute="top" secondItem="fM7-dY-iMO" secondAttribute="bottom" constant="20" id="bA3-dl-GcQ"/>
+                            <constraint firstItem="KYm-xX-wAu" firstAttribute="centerY" secondItem="YMn-pI-gIx" secondAttribute="centerY" id="jKt-1E-2wC"/>
+                            <constraint firstItem="fM7-dY-iMO" firstAttribute="top" secondItem="KYm-xX-wAu" secondAttribute="bottom" constant="20" id="q4U-lp-j8C"/>
+                            <constraint firstItem="dMu-bS-gO1" firstAttribute="centerX" secondItem="YMn-pI-gIx" secondAttribute="centerX" id="w01-iN-3DM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uTj-FQ-ns1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fhs-ho-gHz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kl-sX-pVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="173"/>
+        </scene>
+    </scenes>
+</document>
