@@ -34,7 +34,8 @@
     [self.name addTarget:self action:@selector(textChanged) forControlEvents:UIControlEventEditingChanged];
     [self.phoneNumber addTarget:self action:@selector(textChanged) forControlEvents:UIControlEventEditingChanged];
     
-    
+    // 让姓名文本框成为第一响应者
+    [self.name becomeFirstResponder];
     
 }
 

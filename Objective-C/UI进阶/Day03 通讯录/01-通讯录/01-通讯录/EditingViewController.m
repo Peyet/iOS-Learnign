@@ -41,6 +41,8 @@
         self.nameField.enabled =YES;
         self.phoenNumberField.enabled =YES;
         self.saveBtn.hidden = NO;
+        // 让姓名文本框成为第一响应者
+        [self.phoenNumberField becomeFirstResponder];
     } else {
         sender.title = @"编辑";
         self.nameField.enabled =NO;

@@ -34,6 +34,7 @@
     
     NSString *title = [NSString stringWithFormat:@"%@的联系人", self.userName];
     self.navigationItem.title = title;
+    [self.tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
 }
 
 - (void)logOut {
