@@ -7,12 +7,24 @@
 //
 
 #import "ContactViewController.h"
+#import "AddContactViewController.h"
+#import "Contact.h"
 
-@interface ContactViewController ()
+
+@interface ContactViewController () <AddContactViewControllerDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) NSMutableArray *contacts;
 
 @end
 
 @implementation ContactViewController
+
+- (NSMutableArray *)contacts {
+    if (_contacts == nil) {
+        _contacts = [NSMutableArray new];
+    }
+    return _contacts;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,8 +54,43 @@
     [alertController addAction:actionOfCancel];
 
     [self presentViewController:alertController animated:YES completion:^{
-        
+        NSLog(@"Button clicked.");
     }];
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    AddContactViewController *add = segue.destinationViewController;
+    add.delegate = self;
+}
+
+// 添加联系人的代理方法
+- (void)addContactViewController:(AddContactViewController *)addViewController withContact:(nonnull Contact *)contact {
+    NSLog(@"%@-----%@", contact.name, contact.phoneNumber);
+    [self.contacts addObject:contact];
+    
+    [self.tableView reloadData];
+}
+
+#pragma mark - TableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.contacts.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellID = @"contact_cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
+    cell.textLabel.text = [self.contacts[indexPath.row] name];
+    cell.detailTextLabel.text = [self.contacts[indexPath.row] phoneNumber];
+    
+    return cell;
 }
 
 @end

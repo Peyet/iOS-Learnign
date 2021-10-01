@@ -18,6 +18,8 @@
 		DCE9AA6E2705F98E0090270A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA692705F98E0090270A /* MBProgressHUD.m */; };
 		DCE9AA6F2705F98E0090270A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCE9AA6C2705F98E0090270A /* MBProgressHUD.bundle */; };
 		DCE9AA722705FE0F0090270A /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA712705FE0F0090270A /* ContactViewController.m */; };
+		DCE9AA752706BBC70090270A /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA742706BBC70090270A /* AddContactViewController.m */; };
+		DCE9AA782706C3C70090270A /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA772706C3C70090270A /* Contact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		DCE9AA6C2705F98E0090270A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		DCE9AA702705FE0F0090270A /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		DCE9AA712705FE0F0090270A /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		DCE9AA732706BBC70090270A /* AddContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		DCE9AA742706BBC70090270A /* AddContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		DCE9AA762706C3C70090270A /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		DCE9AA772706C3C70090270A /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				DCE9AA652705E6A40090270A /* LogInViewController.m */,
 				DCE9AA702705FE0F0090270A /* ContactViewController.h */,
 				DCE9AA712705FE0F0090270A /* ContactViewController.m */,
+				DCE9AA732706BBC70090270A /* AddContactViewController.h */,
+				DCE9AA742706BBC70090270A /* AddContactViewController.m */,
+				DCE9AA762706C3C70090270A /* Contact.h */,
+				DCE9AA772706C3C70090270A /* Contact.m */,
 			);
 			path = "01-通讯录";
 			sourceTree = "<group>";
@@ -174,11 +184,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCE9AA722705FE0F0090270A /* ContactViewController.m in Sources */,
+				DCE9AA752706BBC70090270A /* AddContactViewController.m in Sources */,
 				DCE9AA662705E6A40090270A /* LogInViewController.m in Sources */,
 				DCE9AA6E2705F98E0090270A /* MBProgressHUD.m in Sources */,
 				DCE9AA6D2705F98E0090270A /* MBProgressHUD+Ex.m in Sources */,
 				DCE9AA4D2705B4BC0090270A /* AppDelegate.m in Sources */,
 				DCE9AA5E2705B4BE0090270A /* main.m in Sources */,
+				DCE9AA782706C3C70090270A /* Contact.m in Sources */,
 				DCE9AA502705B4BC0090270A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
