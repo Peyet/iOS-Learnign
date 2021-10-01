@@ -20,6 +20,7 @@
 		DCE9AA722705FE0F0090270A /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA712705FE0F0090270A /* ContactViewController.m */; };
 		DCE9AA752706BBC70090270A /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA742706BBC70090270A /* AddContactViewController.m */; };
 		DCE9AA782706C3C70090270A /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA772706C3C70090270A /* Contact.m */; };
+		DCE9AA7B2706EA8B0090270A /* EditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9AA7A2706EA8B0090270A /* EditingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		DCE9AA742706BBC70090270A /* AddContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
 		DCE9AA762706C3C70090270A /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		DCE9AA772706C3C70090270A /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		DCE9AA792706EA8B0090270A /* EditingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditingViewController.h; sourceTree = "<group>"; };
+		DCE9AA7A2706EA8B0090270A /* EditingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				DCE9AA742706BBC70090270A /* AddContactViewController.m */,
 				DCE9AA762706C3C70090270A /* Contact.h */,
 				DCE9AA772706C3C70090270A /* Contact.m */,
+				DCE9AA792706EA8B0090270A /* EditingViewController.h */,
+				DCE9AA7A2706EA8B0090270A /* EditingViewController.m */,
 			);
 			path = "01-通讯录";
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				DCE9AA5E2705B4BE0090270A /* main.m in Sources */,
 				DCE9AA782706C3C70090270A /* Contact.m in Sources */,
 				DCE9AA502705B4BC0090270A /* SceneDelegate.m in Sources */,
+				DCE9AA7B2706EA8B0090270A /* EditingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

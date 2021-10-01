@@ -154,6 +154,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5fc-cC-DSl" kind="show" id="Pav-WK-Ozl"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -238,7 +241,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIm-XG-ae5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2220" y="138"/>
+            <point key="canvasLocation" x="2288" y="-231"/>
+        </scene>
+        <!--查看/编辑联系人-->
+        <scene sceneID="xgC-Ab-kpn">
+            <objects>
+                <viewController id="5fc-cC-DSl" customClass="EditingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K33-12-Dy0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyz-h2-VrB">
+                                <rect key="frame" x="30" y="125" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入联系人姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ver-Ce-Mil">
+                                <rect key="frame" x="80" y="118.5" width="304" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="oiK-9H-J3f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3z-GD-fsp">
+                                <rect key="frame" x="30" y="192" width="39.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入联系人手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="heq-dA-bNS">
+                                <rect key="frame" x="80" y="185.5" width="304" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpS-xv-W96">
+                                <rect key="frame" x="191.5" y="265" width="31" height="30"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="btnClicked:" destination="KKG-Lb-dUX" eventType="touchUpInside" id="2V3-a6-1Dz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ver-Ce-Mil" firstAttribute="leading" secondItem="Kyz-h2-VrB" secondAttribute="trailing" constant="10" id="419-cn-zJ6"/>
+                            <constraint firstItem="i3z-GD-fsp" firstAttribute="leading" secondItem="Ene-cU-Ugd" secondAttribute="leading" constant="30" id="CY6-lo-7Ng"/>
+                            <constraint firstItem="Ver-Ce-Mil" firstAttribute="centerY" secondItem="Kyz-h2-VrB" secondAttribute="centerY" id="LG0-Ho-yse"/>
+                            <constraint firstItem="IpS-xv-W96" firstAttribute="centerX" secondItem="K33-12-Dy0" secondAttribute="centerX" id="ViG-d5-Wth"/>
+                            <constraint firstItem="heq-dA-bNS" firstAttribute="leading" secondItem="Ver-Ce-Mil" secondAttribute="leading" id="YGX-vP-NkX"/>
+                            <constraint firstItem="heq-dA-bNS" firstAttribute="trailing" secondItem="Ver-Ce-Mil" secondAttribute="trailing" id="bAt-TG-pGe"/>
+                            <constraint firstItem="i3z-GD-fsp" firstAttribute="top" secondItem="Kyz-h2-VrB" secondAttribute="bottom" constant="46" id="crG-gB-Ybw"/>
+                            <constraint firstItem="Kyz-h2-VrB" firstAttribute="leading" secondItem="Ene-cU-Ugd" secondAttribute="leading" constant="30" id="iiU-Uv-jWx"/>
+                            <constraint firstItem="IpS-xv-W96" firstAttribute="top" secondItem="heq-dA-bNS" secondAttribute="bottom" constant="45.5" id="ucj-OE-Lxb"/>
+                            <constraint firstItem="Ene-cU-Ugd" firstAttribute="trailing" secondItem="Ver-Ce-Mil" secondAttribute="trailing" constant="30" id="v5U-sN-rlK"/>
+                            <constraint firstItem="Kyz-h2-VrB" firstAttribute="top" secondItem="Ene-cU-Ugd" secondAttribute="top" constant="37" id="vTD-I6-l3J"/>
+                            <constraint firstItem="heq-dA-bNS" firstAttribute="centerY" secondItem="i3z-GD-fsp" secondAttribute="centerY" id="yb5-y6-s4T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ene-cU-Ugd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="查看/编辑联系人" id="Yjl-32-hIV">
+                        <barButtonItem key="rightBarButtonItem" title="编辑" id="APY-qM-ck7">
+                            <connections>
+                                <action selector="editClicked:" destination="5fc-cC-DSl" id="j2e-O7-GqO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameField" destination="Ver-Ce-Mil" id="1w5-Ev-1KQ"/>
+                        <outlet property="phoenNumberField" destination="heq-dA-bNS" id="Ztn-7x-WAO"/>
+                        <outlet property="saveBtn" destination="IpS-xv-W96" id="zGG-jD-dt4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXO-Wr-tIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2287" y="429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yuB-cD-yNE">

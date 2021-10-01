@@ -9,9 +9,10 @@
 #import "ContactViewController.h"
 #import "AddContactViewController.h"
 #import "Contact.h"
+#import "EditingViewController.h"
 
 
-@interface ContactViewController () <AddContactViewControllerDelegate, UITableViewDataSource>
+@interface ContactViewController () <AddContactViewControllerDelegate, UITableViewDataSource, EditingViewControllerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *contacts;
 
@@ -60,8 +61,20 @@
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    AddContactViewController *add = segue.destinationViewController;
-    add.delegate = self;
+    
+    UIViewController *vc = segue.destinationViewController;
+    if ([vc isKindOfClass:[AddContactViewController class]]) {
+        AddContactViewController *add = (AddContactViewController *)vc;
+        add.delegate = self;
+    } else {
+        EditingViewController *edit = (EditingViewController *)vc;
+        edit.delegate = self;
+        
+        NSIndexPath *idxPath = [self.tableView indexPathForSelectedRow];
+        
+        edit.contact = self.contacts[idxPath.row];
+    }
+    
 }
 
 // 添加联系人的代理方法
@@ -92,5 +105,17 @@
     
     return cell;
 }
+
+
+// editingViewController 代理
+- (void)editingViewControllerDelegate:(EditingViewController *)editinngViewController {
+    [self.tableView reloadData];
+}
+
+// 另一种方法
+//- (void)viewWillAppear:(BOOL)animated {
+//    [self.tableView reloadData];
+//    return YES;
+//}
 
 @end
