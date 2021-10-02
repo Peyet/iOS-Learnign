@@ -31,11 +31,24 @@
     [self.passWordField addTarget:self action:@selector(textChanged) forControlEvents:UIControlEventEditingChanged];
     
     [self.logInButton addTarget:self action:@selector(logIn) forControlEvents:UIControlEventTouchUpInside];
-    [self textChanged];
-    
+
     // 监听开关
     [self.leftSwitch addTarget:self action:@selector(rememberPassWord) forControlEvents:UIControlEventValueChanged];
     [self.rightSwitch addTarget:self action:@selector(autoLogIn) forControlEvents:UIControlEventValueChanged];
+    
+    // 初始化用户界面
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    self.leftSwitch.on = [ud boolForKey:@"remPasswordKey"];
+    self.rightSwitch.on = [ud boolForKey:@"autoLogInKey"];
+    self.userNameField.text = [ud objectForKey:@"userNameFieldKey"];
+    if (self.leftSwitch.on) {
+        self.passWordField.text = [ud objectForKey:@"passWordFieldKey"];
+    }
+    if (self.rightSwitch.on) {
+        [self logIn];
+    }
+    
+    [self textChanged];
 }
 
 - (void)textChanged {
@@ -70,6 +83,13 @@
             
             [self performSegueWithIdentifier:@"logInToContact" sender:self];
             [MBProgressHUD showSuccess:@"登陆成功"];
+            
+            NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+            [ud setBool:self.rightSwitch.on forKey:@"autoLogInKey"];
+            [ud setBool:self.leftSwitch.on forKey:@"remPasswordKey"];
+            [ud setObject:self.userNameField.text forKey:@"userNameFieldKey"];
+            [ud setObject:self.passWordField.text forKey:@"passWordFieldKey"];
+            [ud synchronize];
         } else {
             // 提示错误
             [MBProgressHUD showError:@"用户名或密码错误"];
