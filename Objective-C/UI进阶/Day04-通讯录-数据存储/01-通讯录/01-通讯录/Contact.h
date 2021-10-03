@@ -10,12 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Contact : NSObject
+@interface Contact : NSObject <NSSecureCoding>
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *phoneNumber;
-
-
+@property (class, readonly) BOOL supportsSecureCoding;
 
 @end
 

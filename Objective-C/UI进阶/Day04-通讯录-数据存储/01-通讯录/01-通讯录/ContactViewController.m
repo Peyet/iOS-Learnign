@@ -35,6 +35,14 @@
     NSString *title = [NSString stringWithFormat:@"%@的联系人", self.userName];
     self.navigationItem.title = title;
     [self.tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    
+    // 加载Documents中联系人数据
+    NSData *contactsData = [NSData dataWithContentsOfFile:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"contacts.data"]];
+    NSError *unarchiveError;
+    NSSet *set = [[NSSet alloc] initWithObjects:Contact.class, NSMutableArray.class, nil];
+    _contacts = [NSKeyedUnarchiver unarchivedObjectOfClasses:set fromData:contactsData error:&unarchiveError];
+    
+    NSLog(@"unarchive ERROR : %@", unarchiveError);
 }
 
 - (void)logOut {
@@ -84,6 +92,14 @@
     [self.contacts addObject:contact];
     
     [self.tableView reloadData];
+    
+    
+    // 保存数据到Documents
+    NSError *archiveError;
+    NSData *contactData = [NSKeyedArchiver archivedDataWithRootObject:self.contacts requiringSecureCoding:YES error:&archiveError];
+    NSLog(@"archiveError : %@", archiveError);
+    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"contacts.data"];
+    [contactData writeToFile:filePath atomically:YES];
 }
 
 #pragma mark - TableViewDataSource
@@ -110,6 +126,13 @@
 
 // editingViewController 代理
 - (void)editingViewControllerDelegate:(EditingViewController *)editinngViewController {
+    // 保存数据到Documents
+    NSError *archiveError;
+    NSData *contactData = [NSKeyedArchiver archivedDataWithRootObject:self.contacts requiringSecureCoding:YES error:&archiveError];
+    NSLog(@"archiveError : %@", archiveError);
+    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"contacts.data"];
+    [contactData writeToFile:filePath atomically:YES];
+
     [self.tableView reloadData];
 }
 

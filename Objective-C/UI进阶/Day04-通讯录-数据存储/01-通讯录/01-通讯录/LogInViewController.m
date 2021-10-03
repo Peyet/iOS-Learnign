@@ -44,9 +44,9 @@
     if (self.leftSwitch.on) {
         self.passWordField.text = [ud objectForKey:@"passWordFieldKey"];
     }
-    if (self.rightSwitch.on) {
-        [self logIn];
-    }
+//    if (self.rightSwitch.on) {
+//        [self logIn];
+//    }
     
     [self textChanged];
 }
