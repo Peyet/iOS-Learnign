@@ -142,4 +142,16 @@
 //    return YES;
 //}
 
+#pragma mark - TableViewDelegate 滑动删除(让tableView进入编辑模式)
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    [self.contacts removeObject:self.contacts[indexPath.row]];
+//    [self.tableView reloadData];
+    [self.contacts removeObjectAtIndex:indexPath.row];
+    
+    // tableVIew 删除某一行
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+
 @end
