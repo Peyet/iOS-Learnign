@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIColor *color;
 
+- (void)clear;
+- (void)back;
+- (void)eraser;
+
 
 @end
 

@@ -65,4 +65,16 @@
     
 }
 
+- (void)clear {
+    [self.paths removeAllObjects];
+    [self setNeedsDisplay];
+}
+- (void)back {
+    [self.paths removeLastObject];
+    [self setNeedsDisplay];
+}
+- (void)eraser {
+    self.color = self.backgroundColor;
+}
+
 @end

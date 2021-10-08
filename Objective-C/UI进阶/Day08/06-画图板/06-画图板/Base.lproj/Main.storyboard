@@ -22,11 +22,27 @@
                                     <constraint firstAttribute="height" constant="44" id="fwT-2N-VkR"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="清屏" id="a5S-Sw-eW0"/>
-                                    <barButtonItem title="回退" id="nYr-V0-WMS"/>
-                                    <barButtonItem title="橡皮" id="eiP-Eb-2kW"/>
+                                    <barButtonItem title="清屏" id="a5S-Sw-eW0">
+                                        <connections>
+                                            <action selector="clear:" destination="BYZ-38-t0r" id="gGD-eM-oZe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="回退" id="nYr-V0-WMS">
+                                        <connections>
+                                            <action selector="back:" destination="BYZ-38-t0r" id="UWa-cu-TBP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="橡皮" id="eiP-Eb-2kW">
+                                        <connections>
+                                            <action selector="eraser:" destination="BYZ-38-t0r" id="4Jk-Yw-p3O"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="f3z-75-Zpy"/>
-                                    <barButtonItem title="保存" id="PNn-0v-Tb7"/>
+                                    <barButtonItem title="保存" id="PNn-0v-Tb7">
+                                        <connections>
+                                            <action selector="save:" destination="BYZ-38-t0r" id="2AE-eS-EUX"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23Z-dL-fAP">
