@@ -25,6 +25,8 @@
     [self.view addSubview:rotateView];
     
     rotateView.center = self.view.center;
+    
+    [rotateView startRotate];
 }
 
 

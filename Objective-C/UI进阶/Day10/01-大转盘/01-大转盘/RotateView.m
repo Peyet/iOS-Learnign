@@ -80,4 +80,14 @@
     return [[UIImage alloc] initWithCGImage:cgImage scale:2 orientation:UIImageOrientationUp];
 }
 
+// 开始旋转
+- (void)startRotate {
+    CADisplayLink* link = [CADisplayLink displayLinkWithTarget:self selector:@selector(rotate)];
+    [link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+}
+
+- (void)rotate {
+    self.imageRotate.transform = CGAffineTransformRotate(self.imageRotate.transform, 2*M_PI / 60 / 10);
+}
+
 @end
