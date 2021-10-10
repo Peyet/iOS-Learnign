@@ -16,7 +16,7 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LuckyBaseBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gx9-Ve-DkM">
                     <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LuckyRotateWheel" translatesAutoresizingMaskIntoConstraints="NO" id="z9E-Vl-giA">
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="LuckyRotateWheel" translatesAutoresizingMaskIntoConstraints="NO" id="z9E-Vl-giA">
                     <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPh-eM-Nfz">

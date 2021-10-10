@@ -11,7 +11,7 @@
 @interface RotateView ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageRotate;
-
+@property (nonatomic, strong) UIButton* currentButton;
 
 @end
 
@@ -30,12 +30,28 @@
         
         UIImage* sourceImage = [UIImage imageNamed:@"LuckyAstrology"];
         [button setImage:[self clipImageWithImage:sourceImage withIndex:i] forState:UIControlStateNormal];
+
+        UIImage* sourcePressImage = [UIImage imageNamed:@"LuckyAstrologyPressed"];
+        [button setImage:[self clipImageWithImage:sourcePressImage withIndex:i] forState:UIControlStateSelected];
+        
+        [button setBackgroundImage:[UIImage imageNamed:@"LuckyRototeSelected"] forState:UIControlStateSelected];
         
         // button的内边距
         [button setImageEdgeInsets:UIEdgeInsetsMake(-50, 0, 0, 0)];
         
         [self.imageRotate addSubview:button];
+        button.userInteractionEnabled = YES;
+        [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
+}
+
+- (void)buttonClicked:(UIButton *)sender {
+    
+    self.currentButton.selected  = NO;
+    
+    sender.selected = YES;
+    self.currentButton = sender;
+    NSLog(@"selected");
 }
 
 // 布局子控件的位置
