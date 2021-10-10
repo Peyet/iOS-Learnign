@@ -27,6 +27,7 @@
     for (int i = 0; i < 12; i++) {
         UIButton* button = [UIButton new];
 //        button.backgroundColor = UIColor.redColor;
+        [button setTag:i];
         
         UIImage* sourceImage = [UIImage imageNamed:@"LuckyAstrology"];
         [button setImage:[self clipImageWithImage:sourceImage withIndex:i] forState:UIControlStateNormal];
@@ -88,6 +89,21 @@
 
 - (void)rotate {
     self.imageRotate.transform = CGAffineTransformRotate(self.imageRotate.transform, 2*M_PI / 60 / 10);
+}
+- (IBAction)pickNumber:(id)sender {
+    CABasicAnimation* anim = [CABasicAnimation new];
+
+    CGFloat angle = 2*M_PI*3 - self.currentButton.tag * 2 * M_PI / 12;
+    
+    anim.keyPath = @"transform.rotation";
+    anim.toValue = @(angle);
+    anim.duration = 3;
+    
+    // 禁止回到原位
+    anim.fillMode = kCAFillModeForwards;
+    anim.removedOnCompletion = NO;
+    
+    [self.imageRotate.layer addAnimation:anim forKey:nil];
 }
 
 @end

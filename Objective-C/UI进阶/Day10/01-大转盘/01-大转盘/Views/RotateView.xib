@@ -23,6 +23,9 @@
                     <rect key="frame" x="102.5" y="102.5" width="81" height="81"/>
                     <state key="normal" backgroundImage="LuckyCenterButton"/>
                     <state key="highlighted" backgroundImage="LuckyCenterButtonPressed"/>
+                    <connections>
+                        <action selector="pickNumber:" destination="XbT-8o-noh" eventType="touchUpInside" id="WaB-GN-rwY"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
