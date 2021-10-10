@@ -93,10 +93,10 @@
 - (IBAction)pickNumber:(id)sender {
     CABasicAnimation* anim = [CABasicAnimation new];
 
-    CGFloat angle = 2*M_PI*3 - self.currentButton.tag * 2 * M_PI / 12;
+    CGFloat angle =  self.currentButton.tag * 2 * M_PI / 12;
     
     anim.keyPath = @"transform.rotation";
-    anim.toValue = @(angle);
+    anim.toValue = @(2*M_PI*3 - angle);
     anim.duration = 3;
     
     // 禁止回到原位
@@ -104,6 +104,10 @@
     anim.removedOnCompletion = NO;
     
     [self.imageRotate.layer addAnimation:anim forKey:nil];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.imageRotate.transform = CGAffineTransformMakeRotation( - angle);
+    });
 }
 
 @end
