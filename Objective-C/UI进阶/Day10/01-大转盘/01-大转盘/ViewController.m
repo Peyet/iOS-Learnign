@@ -26,7 +26,15 @@
     
     rotateView.center = self.view.center;
     
-//    [rotateView startRotate];
+    [rotateView startRotate];
+    
+    rotateView.alert = ^(UIAlertController * _Nonnull alertController) {
+        [self presentViewController:alertController animated:YES completion:^{
+            
+        }];
+        NSLog(@"题哦啊真的舒服撒的");
+        
+    };
 }
 
 

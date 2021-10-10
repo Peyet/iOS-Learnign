@@ -12,6 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageRotate;
 @property (nonatomic, strong) UIButton* currentButton;
+@property (nonatomic, strong) CADisplayLink *link;
+
 
 @end
 
@@ -85,12 +87,19 @@
 - (void)startRotate {
     CADisplayLink* link = [CADisplayLink displayLinkWithTarget:self selector:@selector(rotate)];
     [link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    self.link = link;
 }
 
 - (void)rotate {
     self.imageRotate.transform = CGAffineTransformRotate(self.imageRotate.transform, 2*M_PI / 60 / 10);
 }
 - (IBAction)pickNumber:(id)sender {
+    if ([self.imageRotate.layer animationForKey:@"key"]) {
+        return;
+    }
+    
+    [self.link setPaused:YES];
+    
     CABasicAnimation* anim = [CABasicAnimation new];
 
     CGFloat angle =  self.currentButton.tag * 2 * M_PI / 12;
@@ -103,10 +112,22 @@
     anim.fillMode = kCAFillModeForwards;
     anim.removedOnCompletion = NO;
     
-    [self.imageRotate.layer addAnimation:anim forKey:nil];
+    [self.imageRotate.layer addAnimation:anim forKey:@"key"];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.imageRotate.transform = CGAffineTransformMakeRotation( - angle);
+        
+        // 弹窗
+        UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"你的幸运号" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            NSLog(@"确定");
+            self.link.paused = NO;
+        }];
+        
+        [alertController addAction:action];
+        
+        self.alert(alertController);
+        [self.imageRotate.layer removeAnimationForKey:@"key"];
     });
 }
 

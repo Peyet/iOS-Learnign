@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^Alert)(UIAlertController * alertController);
 @interface RotateView : UIView
+
+@property (nonatomic, copy) Alert alert;
 
 + (instancetype)rotateView ;
 - (void)startRotate;
