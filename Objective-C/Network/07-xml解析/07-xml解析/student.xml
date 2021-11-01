@@ -1,0 +1,4 @@
+<class name="1">
+    <student name="张三" age="18" />
+    <student name="李四" age="17" />
+</class>
