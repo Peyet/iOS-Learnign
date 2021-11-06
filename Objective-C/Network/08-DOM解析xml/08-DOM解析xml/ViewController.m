@@ -60,4 +60,26 @@
     }];
 }
 
+
+NSURL *url = [NSURL URLWithString:@"http://127.0.0.1/videos.xml"];
+NSURLRequest *request = [NSURLRequest requestWithURL:url];
+[NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue new] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+    if (connectionError) {
+        NSLog(@"连接错误 %@",connectionError);
+        return;
+    }
+    
+    //
+    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+    if (httpResponse.statusCode == 200 || httpResponse.statusCode == 304) {
+        //解析数据
+        NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
+        //设置代理
+        parser.delegate = self;
+        //开始执行代理的方法，代理的方法中开始解析的
+        [parser parse];
+    }else{
+        NSLog(@"服务器内部错误");
+    }
+}];
 @end
