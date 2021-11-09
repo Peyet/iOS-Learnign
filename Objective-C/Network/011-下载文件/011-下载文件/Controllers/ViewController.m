@@ -22,7 +22,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     FileDownloader* fileDownloader = [FileDownloader new];
-    [fileDownloader download:@"http://127.0.0.1/ferdowsi.jpg"];
+    [fileDownloader download:@"http://127.0.0.1/abc.exe"];
 }
 
 
