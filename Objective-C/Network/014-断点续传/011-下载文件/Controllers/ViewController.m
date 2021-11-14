@@ -22,7 +22,14 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     FileDownloader* fileDownloader = [FileDownloader new];
-    [fileDownloader download:@"http://127.0.0.1/abc.exe"];
+//    [fileDownloader download:@"http://127.0.0.1/abc.exe"];
+    [fileDownloader download:@"http://127.0.0.1/abc.exe" successBlock:^(NSString * _Nonnull path) {
+        NSLog(@"下载完成!已保存到:%@", path);
+    } processBlock:^(float process) {
+        NSLog(@"process : %lld", process);
+    } errorBlock:^(NSError * _Nonnull error) {
+        NSLog(@"出错啦 : %@", error);
+    }];
 }
 
 

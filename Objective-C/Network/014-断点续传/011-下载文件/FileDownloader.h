@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FileDownloader : NSObject
 
 - (void)download:(NSString *)urlString;
+- (void)download:(NSString *)urlString successBlock:(void(^)(NSString *path))success processBlock:(void(^)(float process))processBlock errorBlock:(void(^)(NSError *error))errorBlock;
 
 @end
 

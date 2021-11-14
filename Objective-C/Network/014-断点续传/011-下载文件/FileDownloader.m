@@ -20,11 +20,17 @@
 @property (nonatomic, copy) NSString *filePath;
 
 
+@property (nonatomic, copy) void (^successBlock)(NSString *);
+@property (nonatomic, copy) void (^processBlock)(float process);
+@property (nonatomic, copy) void (^errorBlock)(NSError *);
 @end
 
 @implementation FileDownloader
 
-- (void)download:(NSString *)urlString {
+- (void)download:(NSString *)urlString successBlock:(void(^)(NSString *path))successBlock processBlock:(void(^)(float process))processBlock errorBlock:(void(^)(NSError *error))errorBlock {
+    self.successBlock = successBlock;
+    self.processBlock = processBlock;
+    self.errorBlock = errorBlock;
     
     NSURL* url = [NSURL URLWithString:urlString];
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url];
@@ -32,13 +38,21 @@
     [self getServerFileInfo:url];
     self.currentDownloadSize = [self checkLocalFileInfo];
     if (self.currentDownloadSize < 0) {
-        NSLog(@"文件已经下载完成,无需重复下载");
+//        NSLog(@"文件已经下载完成,无需重复下载");
+        if (self.successBlock) {
+//            self.successBlock(@"下载完成~");
+            self.successBlock(self.filePath);
+        }
         return ;
     }
     
     [request setValue:[NSString stringWithFormat:@"bytes:%lld-", self.currentDownloadSize] forHTTPHeaderField:@"Rang"];
-    NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    [connection start];
+    
+    [[NSOperationQueue new] addOperationWithBlock:^{
+        NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        [connection start];
+        [[NSRunLoop currentRunLoop] run];
+    }];
 }
 
 - (void)getServerFileInfo:(NSURL *)url {
@@ -86,7 +100,10 @@
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     self.currentDownloadSize += data.length;
     float process = 1.0 * self.currentDownloadSize / self.expectedContentLength;
-    NSLog(@"download process is : %f", process);
+//    NSLog(@"download process is : %f", process);
+    if (self.processBlock) {
+        self.processBlock(process);
+    }
     
     [self.outputStream write:data.bytes maxLength:data.length];
     
@@ -97,7 +114,10 @@
 
 //  下载完成
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    NSLog(@"下载完成");
+//    NSLog(@"下载完成");
+    if (self.successBlock) {
+        self.successBlock(@"下载完成~");
+    }
     [self.outputStream close];
 }
 
