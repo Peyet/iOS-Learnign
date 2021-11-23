@@ -31,6 +31,7 @@ static NSString * const reuseIdentifier = @"Cell";
     // Register cell classes
     
     // Do any additional setup after loading the view.
+    // 图片轮播器
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     NSLog(@"iamgeLoopViewcontroller");
     [Headline headlineWithSuccessBlock:^(NSArray * _Nonnull array) {
@@ -44,7 +45,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (void)setCollectionViewStyle {
-    self.flowLayout.itemSize = self.collectionView.frame.size;
+//    self.flowLayout.itemSize = self.collectionView.frame.size;
     self.flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.flowLayout.minimumInteritemSpacing = 0;
     self.flowLayout.minimumLineSpacing = 0;
@@ -52,6 +53,10 @@ static NSString * const reuseIdentifier = @"Cell";
     self.collectionView.pagingEnabled = YES;
     self.collectionView.showsHorizontalScrollIndicator = NO;
     self.collectionView.bounces = NO;
+}
+
+- (void)viewDidLayoutSubviews {
+    self.flowLayout.itemSize = self.collectionView.frame.size;
 }
 
 /*
@@ -85,7 +90,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     headlineCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"headlineCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor redColor];
+//    cell.backgroundColor = [UIColor redColor];
     
     // Configure the cell
     cell.tag = indexPath.item;

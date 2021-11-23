@@ -15,6 +15,9 @@
 		DC40D232274B941A0091BD01 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC40D231274B941A0091BD01 /* News.storyboard */; };
 		DC40D235274B948E0091BD01 /* ImageLoopController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC40D234274B948E0091BD01 /* ImageLoopController.m */; };
 		DC4D0DBA274BC7F80005E781 /* headlineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4D0DB9274BC7F80005E781 /* headlineCell.m */; };
+		DC4D0DBF274C904A0005E781 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4D0DBE274C904A0005E781 /* News.m */; };
+		DC4D0DC2274C9B400005E781 /* NewsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4D0DC1274C9B400005E781 /* NewsListController.m */; };
+		DC4D0DC5274CA0480005E781 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4D0DC4274CA0480005E781 /* NewsCell.m */; };
 		DCB8C2322749EABA00C6F2E1 /* MyNetWorkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB8C2312749EABA00C6F2E1 /* MyNetWorkTools.m */; };
 		DCB8C236274A1A3000C6F2E1 /* Headline.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB8C235274A1A3000C6F2E1 /* Headline.m */; };
 		E3E4E0FEA7F082EDD3E0A466 /* libPods-016-网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 385E3B0BC935C4FBA0360DD6 /* libPods-016-网易新闻.a */; };
@@ -37,6 +40,12 @@
 		DC40D234274B948E0091BD01 /* ImageLoopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageLoopController.m; sourceTree = "<group>"; };
 		DC4D0DB8274BC7F80005E781 /* headlineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = headlineCell.h; sourceTree = "<group>"; };
 		DC4D0DB9274BC7F80005E781 /* headlineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = headlineCell.m; sourceTree = "<group>"; };
+		DC4D0DBD274C904A0005E781 /* News.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		DC4D0DBE274C904A0005E781 /* News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		DC4D0DC0274C9B400005E781 /* NewsListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsListController.h; sourceTree = "<group>"; };
+		DC4D0DC1274C9B400005E781 /* NewsListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListController.m; sourceTree = "<group>"; };
+		DC4D0DC3274CA0480005E781 /* NewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		DC4D0DC4274CA0480005E781 /* NewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		DCB8C2302749EABA00C6F2E1 /* MyNetWorkTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNetWorkTools.h; sourceTree = "<group>"; };
 		DCB8C2312749EABA00C6F2E1 /* MyNetWorkTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNetWorkTools.m; sourceTree = "<group>"; };
 		DCB8C234274A1A3000C6F2E1 /* Headline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headline.h; sourceTree = "<group>"; };
@@ -94,10 +103,12 @@
 		DC17564E2749E15500DC30A8 /* 016-网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				DC4D0DBC274BE6730005E781 /* News */,
 				DCB8C233274A1A0D00C6F2E1 /* ImageLoop */,
 				DCB8C22F2749EA7000C6F2E1 /* Tools */,
 				DC17564F2749E15500DC30A8 /* AppDelegate.h */,
 				DC1756502749E15500DC30A8 /* AppDelegate.m */,
+				DC40D231274B941A0091BD01 /* News.storyboard */,
 				DC1756522749E15500DC30A8 /* SceneDelegate.h */,
 				DC1756532749E15500DC30A8 /* SceneDelegate.m */,
 				DC17565B2749E15700DC30A8 /* Assets.xcassets */,
@@ -106,6 +117,19 @@
 				DC1756612749E15700DC30A8 /* main.m */,
 			);
 			path = "016-网易新闻";
+			sourceTree = "<group>";
+		};
+		DC4D0DBC274BE6730005E781 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				DC4D0DBD274C904A0005E781 /* News.h */,
+				DC4D0DBE274C904A0005E781 /* News.m */,
+				DC4D0DC0274C9B400005E781 /* NewsListController.h */,
+				DC4D0DC1274C9B400005E781 /* NewsListController.m */,
+				DC4D0DC3274CA0480005E781 /* NewsCell.h */,
+				DC4D0DC4274CA0480005E781 /* NewsCell.m */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 		DCB8C22F2749EA7000C6F2E1 /* Tools */ = {
@@ -122,7 +146,6 @@
 			children = (
 				DCB8C234274A1A3000C6F2E1 /* Headline.h */,
 				DCB8C235274A1A3000C6F2E1 /* Headline.m */,
-				DC40D231274B941A0091BD01 /* News.storyboard */,
 				DC40D233274B948E0091BD01 /* ImageLoopController.h */,
 				DC40D234274B948E0091BD01 /* ImageLoopController.m */,
 				DC4D0DB8274BC7F80005E781 /* headlineCell.h */,
@@ -233,6 +256,9 @@
 				DC1756622749E15700DC30A8 /* main.m in Sources */,
 				DC1756542749E15500DC30A8 /* SceneDelegate.m in Sources */,
 				DC40D235274B948E0091BD01 /* ImageLoopController.m in Sources */,
+				DC4D0DC2274C9B400005E781 /* NewsListController.m in Sources */,
+				DC4D0DBF274C904A0005E781 /* News.m in Sources */,
+				DC4D0DC5274CA0480005E781 /* NewsCell.m in Sources */,
 				DC4D0DBA274BC7F80005E781 /* headlineCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
