@@ -56,6 +56,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
     self.flowLayout.itemSize = self.collectionView.frame.size;
 }
 

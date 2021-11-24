@@ -42,4 +42,19 @@
     }] resume];
 }
 
+- (NSString *)getReuseIdentifier {
+//WithNews:(News *)news {
+    if (self.hasImg) {
+        return @"newsCell1";
+    }
+    return @"newsCell";
+}
+
+- (CGFloat)getRowHeight {
+    if (self.hasImg) {
+        return 200;
+    }
+    return 80;
+}
+
 @end
